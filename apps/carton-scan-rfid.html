@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avery RFID Scan | Table-Top Scanner & Atma API Integration — Rajan Singh Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-group">
+        <div class="brand-logo-frame"><i class="fa-solid fa-microchip"></i></div>
+        <div class="brand-titles">
+          <h1>Rajan Singh <span class="nav-badge">PORTFOLIO</span></h1>
+          <p>Asst. Manager — Digitalization</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="../index.html#apps" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> All 15 Systems</a>
+        <a href="mailto:rajan321singh@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Rajan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="product-topbar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" class="breadcrumb-link"><i class="fa-solid fa-house"></i> Portfolio</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="../index.html#apps" class="breadcrumb-link">Production & Shipping</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Avery RFID Scan</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-header">
+        <div class="product-title-group">
+          <div class="product-tagline">
+            <i class="fa-solid fa-wifi"></i> EPC RFID VERIFICATION & AVERY DENNISON TABLE-TOP SCANNER
+          </div>
+          <h1 class="product-h1">Avery RFID Scan: Table-Top Verification</h1>
+          <p class="product-lead">
+            An industrial IoT verification system capturing live RFID EPC scan telemetry from the Avery Dennison table-top scanner at the end of finishing. Features shift-aware timestamp mapping, automated PO carton reconciliation, and verified export shipping accuracy.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <span class="status-pill"><span class="pulse-dot"></span> Live at Table-Top Scanner</span>
+        </div>
+      </div>
+
+      <div class="product-meta-matrix">
+        <div class="meta-item">
+          <div class="meta-label">Primary Department</div>
+          <div class="meta-val"><i class="fa-solid fa-barcode"></i> Finishing & Shipping Audit</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Frontend Framework</div>
+          <div class="meta-val cyan"><i class="fa-solid fa-bolt"></i> React 18 & Vite Enterprise PWA</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target Users</div>
+          <div class="meta-val"><i class="fa-solid fa-users"></i> Audit Captains, Packaging Leads</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Cloud API</div>
+          <div class="meta-val emerald"><i class="fa-solid fa-cloud"></i> Avery Dennison Atma API</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-nav-bar">
+    <div class="container">
+      <ul class="page-nav-links">
+        <li class="page-nav-item active"><a href="#problem">The Problem</a></li>
+        <li class="page-nav-item"><a href="#solution">Features & Modules</a></li>
+        <li class="page-nav-item"><a href="#architecture">Architecture</a></li>
+        <li class="page-nav-item"><a href="#ui-showcase">Interactive UI</a></li>
+        <li class="page-nav-item"><a href="#impact">Business Impact</a></li>
+        <li class="page-nav-item"><a href="#takeaway">Key Takeaway</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Problem -->
+    <section id="problem" class="product-section">
+      <span class="section-label-tag">COMPLIANCE & VERIFICATION RISKS</span>
+      <h2 class="section-h2">Why Carton Scan RFID Was Built</h2>
+      <p class="section-lead">
+        Global athletic apparel brands mandate strict, flawless RFID EPC carton accuracy. If an export shipping container arrives at a brand distribution center with missing, unread, or mismatched RFID tags inside sealed master cartons, manufacturers face severe vendor chargebacks and shipment holds.
+      </p>
+
+      <div class="problem-solution-grid">
+        <div class="ps-card problem">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h3>Pre-RFID Verification Risks</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-xmark"></i> <strong>Vendor Chargeback Penalties:</strong> A single unscanned garment carton caused chargebacks and expensive penalties per shipment.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Midnight Shift Reconciliation Chaos:</strong> Factory night shifts crossing 00:00:00 caused standard software to split carton counts across two separate calendar days.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Unnoticed Defective Tags:</strong> Dead or de-tuned RFID inlays inside sealed boxes were not caught until the buyer opened the container overseas.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Manual Packing Slip Checks:</strong> Tallying high-volume cartons using paper clipboards was error-prone, labor-intensive, and sluggish.</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>The Automated RFID Solution</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-check"></i> <strong>Real-Time Atma Cloud Integration:</strong> Direct connection to Avery Dennison Atma API captures table-top scanner reads with zero human delay.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Operational Shift Normalizer:</strong> Intelligently maps late-night scans (00:00 to 06:59) to the actual factory production shift date.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Instant Discrepancy Alerts:</strong> Flashes immediate alerts if a carton has duplicate EPCs, missing garments, or wrong size ratios.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>End-to-End Verification:</strong> Delivers complete, audited shipping manifests for customs and brand quality assurance teams.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="solution" class="product-section">
+      <span class="section-label-tag">PLATFORM CAPABILITIES</span>
+      <h2 class="section-h2">Carton Verification Capabilities</h2>
+
+      <div class="feature-matrix-grid">
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+            <span class="feature-number">01</span>
+          </div>
+          <h4>Avery Dennison Atma API Polling</h4>
+          <p>Seamless REST integration polling Avery Dennison RFID cloud reader controllers, streaming raw EPC carton scan telemetry directly into the client.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-box-open"></i></div>
+            <span class="feature-number">02</span>
+          </div>
+          <h4>PO Carton Reconciliation</h4>
+          <p>Validates total scanned cartons against master PO pack lists, tracking scanned vs expected pieces per size before cartons leave the facility.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+            <span class="feature-number">03</span>
+          </div>
+          <h4>Operational Shift Normalization</h4>
+          <p>Automatically segments high-speed scans into Day Shift (07:00–19:00) vs Night Shift (19:00–07:00) while rolling 00:00–07:00 scans back to the active production date.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <span class="feature-number">04</span>
+          </div>
+          <h4>Discrepancy & EPC Diagnostics</h4>
+          <p>Highlights duplicate EPC tags, flags incomplete cartons, and detects unread inlays in real time with visual amber and rose warnings.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <span class="feature-number">05</span>
+          </div>
+          <h4>Multi-Parametric Filter Toolbar</h4>
+          <p>Instant client-side React filtering across PO Number, Buyer Code, Date Types (Created vs Updated), Shift Selection, and Completion Status.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-file-csv"></i></div>
+            <span class="feature-number">06</span>
+          </div>
+          <h4>Shipping Manifest Exporter</h4>
+          <p>One-click CSV/Excel export of verified RFID carton manifests ready for container stuffing inspections, buyer EDI portals, and customs documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="product-section">
+      <span class="section-label-tag">TECHNICAL ARCHITECTURE</span>
+      <h2 class="section-h2">Avery Table-Top RFID Architecture</h2>
+
+            <div class="arch-diagram-wrapper">
+        <div class="arch-header-bar">
+          <div class="arch-terminal-dots">
+            <span class="arch-dot dot-red"></span>
+            <span class="arch-dot dot-yellow"></span>
+            <span class="arch-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #38bdf8;">
+            <i class="fa-solid fa-diagram-project" style="margin-right: 6px;"></i> Avery RFID Scan End-to-End Operational & System Flowchart
+          </span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: var(--emerald); font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">ACTIVE SHOPFLOOR FLOW</span>
+        </div>
+
+        <div class="visual-arch-pipeline">
+          <!-- Stage 01 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 01</span>
+              <div class="arch-node-icon" style="color: #38bdf8;"><i class="fa-solid fa-boxes-packing"></i></div>
+            </div>
+            <div class="arch-node-title">Avery Dennison Table-Top Scanner</div>
+            <div class="arch-node-subtitle">Workstation Scan Bed</div>
+            <div class="arch-node-desc">Finished packed cartons are placed on high-speed Avery Dennison table-top RFID scanner beds at export packing stations.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Avery Dennison Table-Top</span><span class="arch-tech-pill">Near-Field Bed Antennas</span><span class="arch-tech-pill">Photo Trigger</span>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 02</span>
+              <div class="arch-node-icon" style="color: #a78bfa;"><i class="fa-solid fa-satellite-dish"></i></div>
+            </div>
+            <div class="arch-node-title">High-Speed Tag Interrogation Gateway</div>
+            <div class="arch-node-subtitle">Reader Middleware</div>
+            <div class="arch-node-desc">Decodes hundreds of RFID EPC garment tags per second, filtering stray signals and reflections from neighboring lines.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">LLRP Protocol</span><span class="arch-tech-pill">Anti-Collision Algorithm</span><span class="arch-tech-pill">Stray Tag Filter</span>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 03</span>
+              <div class="arch-node-icon" style="color: #f59e0b;"><i class="fa-solid fa-clipboard-check"></i></div>
+            </div>
+            <div class="arch-node-title">Packing List Reconciliation Engine</div>
+            <div class="arch-node-subtitle">Verification Core</div>
+            <div class="arch-node-desc">Instantly compares scanned garment SKU, size, and piece counts against the authorized buyer packing list.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Instant SKU Match</span><span class="arch-tech-pill">Under/Over Packing Alarms</span><span class="arch-tech-pill">Pass/Fail Logic</span>
+            </div>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 04</span>
+              <div class="arch-node-icon" style="color: #10b981;"><i class="fa-solid fa-file-circle-check"></i></div>
+            </div>
+            <div class="arch-node-title">Green Light Gate & Export Manifest</div>
+            <div class="arch-node-subtitle">Container Clearance</div>
+            <div class="arch-node-desc">Triggers visual dock green-lights on 100% verified cartons and generates certified shipping container manifests.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Visual Dock Status</span><span class="arch-tech-pill">ERP Shipping Signoff</span><span class="arch-tech-pill">Audit Proof Archive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-flow-summary-bar">
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-bolt"></i> <span><strong>Processing:</strong> Instant bulk carton verification in under 3 seconds</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-shield-halved"></i> <span><strong>Security:</strong> Eliminates buyer chargebacks for incorrect garment counts</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-chart-line"></i> <span><strong>Business Value:</strong> 100% audit-proof shipping container manifests & faster dispatch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI Mockup -->
+    <section id="ui-showcase" class="product-section">
+      <span class="section-label-tag">TERMINAL INTERFACE</span>
+      <h2 class="section-h2">Live RFID Verification Dashboard</h2>
+
+        <!-- Interactive Tab Bar -->
+        <div class="app-tab-bar">
+          <button class="app-tab-btn active" data-tab-target="tab-rfid-all"><i class="fa-solid fa-layer-group"></i> All Shifts Telemetry</button>
+          <button class="app-tab-btn" data-tab-target="tab-rfid-day"><i class="fa-solid fa-sun"></i> Day Shift (07:00–19:00)</button>
+          <button class="app-tab-btn" data-tab-target="tab-rfid-night"><i class="fa-solid fa-moon"></i> Night Shift (19:00–07:00)</button>
+        </div>
+
+        <!-- Metric KPI Cards -->
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 14px 16px; background: rgba(15,23,42,0.9); border-bottom: 1px solid rgba(255,255,255,0.06);">
+          <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="font-size: 0.7rem; color: var(--text-muted);">TOTAL ACTIVE POS</div>
+            <div style="font-size: 1.4rem; font-weight: 700; color: #fff;">184 Orders</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="font-size: 0.7rem; color: var(--text-muted);">CARTONS SCANNED</div>
+            <div style="font-size: 1.4rem; font-weight: 700; color: var(--cyan);">14,892 Cartons</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="font-size: 0.7rem; color: var(--text-muted);">VERIFICATION STATE</div>
+            <div style="font-size: 1.4rem; font-weight: 700; color: var(--emerald);">Full Audit Pass</div>
+          </div>
+          <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">
+            <div style="font-size: 0.7rem; color: var(--text-muted);">EPC DISCREPANCIES</div>
+            <div style="font-size: 1.4rem; font-weight: 700; color: var(--emerald);">0 Issues</div>
+          </div>
+        </div>
+
+        <!-- Tab 1: All Shifts Telemetry -->
+        <div id="tab-rfid-all" class="app-tab-panel active" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.8); padding: 14px; border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; color: var(--cyan); font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px; margin-bottom: 8px;">
+              <span>PO NUMBER</span>
+              <span>DESTINATION</span>
+              <span>PROGRESS</span>
+              <span>SCANNED / REQ</span>
+              <span>SHIFT / TIME</span>
+              <span>STATUS</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200686870</span>
+              <span style="color: var(--text-muted);">US-WEST-DC</span>
+              <span style="color: var(--emerald); font-weight: 700;">Complete</span>
+              <span>480 / 480 Ctn</span>
+              <span>Night (22:40:15)</span>
+              <span style="color: var(--emerald); background: rgba(16,185,129,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">VERIFIED</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200674614</span>
+              <span style="color: var(--text-muted);">EU-ROTTERDAM</span>
+              <span style="color: var(--emerald); font-weight: 700;">Complete</span>
+              <span>310 / 310 Ctn</span>
+              <span>Night (01:15:42)</span>
+              <span style="color: var(--emerald); background: rgba(16,185,129,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">VERIFIED</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200690122</span>
+              <span style="color: var(--text-muted);">CA-TORONTO</span>
+              <span style="color: var(--amber); font-weight: 700;">Active Pacing</span>
+              <span>230 / 260 Ctn</span>
+              <span>Night (03:45:10)</span>
+              <span style="color: var(--amber); background: rgba(245,158,11,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">IN SCAN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Day Shift -->
+        <div id="tab-rfid-day" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.8); padding: 14px; border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">
+            <div style="margin-bottom: 8px; font-size: 0.75rem; color: var(--text-muted);">
+              <i class="fa-solid fa-sun" style="color: var(--amber);"></i> Filtered to Day Shift Production (07:00 - 19:00)
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; color: var(--cyan); font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px; margin-bottom: 8px;">
+              <span>PO NUMBER</span>
+              <span>DESTINATION</span>
+              <span>PROGRESS</span>
+              <span>SCANNED / REQ</span>
+              <span>SHIFT / TIME</span>
+              <span>STATUS</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200651120</span>
+              <span style="color: var(--text-muted);">US-EAST-DC</span>
+              <span style="color: var(--emerald); font-weight: 700;">Complete</span>
+              <span>520 / 520 Ctn</span>
+              <span>Day (14:20:10)</span>
+              <span style="color: var(--emerald); background: rgba(16,185,129,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">VERIFIED</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200654490</span>
+              <span style="color: var(--text-muted);">EU-HAMBURG</span>
+              <span style="color: var(--emerald); font-weight: 700;">Complete</span>
+              <span>400 / 400 Ctn</span>
+              <span>Day (17:45:00)</span>
+              <span style="color: var(--emerald); background: rgba(16,185,129,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">VERIFIED</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Night Shift -->
+        <div id="tab-rfid-night" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.8); padding: 14px; border-radius: 6px; font-size: 0.82rem; font-family: var(--font-mono);">
+            <div style="margin-bottom: 8px; font-size: 0.75rem; color: var(--text-muted);">
+              <i class="fa-solid fa-moon" style="color: var(--cyan);"></i> Filtered to Night Shift Production (19:00 - 07:00) • Midnight Normalizer Active
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; color: var(--cyan); font-weight: 700; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px; margin-bottom: 8px;">
+              <span>PO NUMBER</span>
+              <span>DESTINATION</span>
+              <span>PROGRESS</span>
+              <span>SCANNED / REQ</span>
+              <span>SHIFT / TIME</span>
+              <span>STATUS</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200686870</span>
+              <span style="color: var(--text-muted);">US-WEST-DC</span>
+              <span style="color: var(--emerald); font-weight: 700;">Complete</span>
+              <span>480 / 480 Ctn</span>
+              <span>Night (22:40:15)</span>
+              <span style="color: var(--emerald); background: rgba(16,185,129,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">VERIFIED</span>
+            </div>
+            <div style="display: grid; grid-template-columns: 130px 140px 120px 130px 1fr 100px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); align-items: center;">
+              <span style="color: #fff; font-weight: 600;"><i class="fa-solid fa-box" style="color: var(--cyan); margin-right: 4px;"></i> 4200674614</span>
+              <span style="color: var(--text-muted);">EU-ROTTERDAM</span>
+              <span style="color: var(--emerald); font-weight: 700;">Complete</span>
+              <span>310 / 310 Ctn</span>
+              <span>Night (01:15:42)</span>
+              <span style="color: var(--emerald); background: rgba(16,185,129,0.12); padding: 2px 6px; border-radius: 4px; text-align: center; font-size: 0.75rem;">VERIFIED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="product-section">
+      <span class="section-label-tag">VERIFICATION & ROI</span>
+      <h2 class="section-h2">Streamlined Verification & Zero Discrepancy Dispatch</h2>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <div class="roi-headline">Workload Reduction</div>
+          <div class="roi-metric-name">Automated Carton Tallying</div>
+          <p class="roi-detail">Instant cloud API polling replaced hours of manual clipboard carton counting at the loading dock.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <div class="roi-headline">Less Paperwork</div>
+          <div class="roi-metric-name">Digital Shipping Manifests</div>
+          <p class="roi-detail">One-click digital export of verified RFID carton manifests ready for container stuffing inspections and customs documentation.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-clock"></i></div>
+          <div class="roi-headline">Shift Accuracy</div>
+          <div class="roi-metric-name">Cross-Midnight Shift Normalization</div>
+          <p class="roi-detail">Eliminated midnight shift reconciliation errors through custom operational timestamp logic, keeping shift tallies unified.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="roi-headline">Chargeback Prevention</div>
+          <div class="roi-metric-name">Zero Discrepancy Dispatch</div>
+          <p class="roi-detail">Guarantees carton count and EPC accuracy across export shipping containers, preventing buyer compliance penalties.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Takeaway -->
+    <section id="takeaway" class="product-section">
+      <div class="recruiter-banner">
+        <div class="recruiter-icon-badge"><i class="fa-solid fa-user-check"></i></div>
+        <div class="recruiter-takeaway-content">
+          <h4>Key Takeaway: My IoT Engineering Impact</h4>
+          <p>
+            I engineered the Avery RFID Scan system to automate shipping verification and eliminate the risk of missing or mismatched RFID tags in export garments. By integrating directly with Avery Dennison's Atma cloud API and developing custom cross-midnight shift reconciliation logic, I gave factory supervisors and shipping teams real-time visibility over every carton scanned on the Avery Dennison table-top RFID workstation, ensuring complete dispatch accuracy, eliminating manual counting workload, and preventing expensive customer chargebacks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pager Navigation -->
+    <div class="app-pager-nav">
+      <a href="wh-stock.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">← Previous Application</span>
+          <span class="app-name">WH Stock & Rack</span>
+        </div>
+      </a>
+      <a href="floor-audit.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">Next Application →</span>
+          <span class="app-name">Floor Audit & TV Wallboard</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Rajan Singh</strong> • Avery RFID Scan Product Showcase</div>
+      <div>Sidney Apparels LLC / Kingsville Garments</div>
+    </div>
+  </footer>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>

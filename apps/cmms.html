@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMMS | Computerized Maintenance Management System — Rajan Singh Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+  <!-- Ambient Cyber Lighting -->
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Global Header -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-group">
+        <div class="brand-logo-frame"><i class="fa-solid fa-microchip"></i></div>
+        <div class="brand-titles">
+          <h1>Rajan Singh <span class="nav-badge">PORTFOLIO</span></h1>
+          <p>Asst. Manager — Digitalization</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="../index.html#apps" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> All 15 Systems</a>
+        <a href="mailto:rajan321singh@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Rajan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="product-topbar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" class="breadcrumb-link"><i class="fa-solid fa-house"></i> Portfolio</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="../index.html#apps" class="breadcrumb-link">Maintenance</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">CMMS</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Product Hero -->
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-header">
+        <div class="product-title-group">
+          <div class="product-tagline">
+            <i class="fa-solid fa-wrench"></i> INDUSTRIAL MACHINERY LIFECYCLE MANAGEMENT
+          </div>
+          <h1 class="product-h1">CMMS: Computerized Maintenance Management System</h1>
+          <p class="product-lead">
+            An enterprise-grade plant maintenance platform engineering real-time machine tracking, preventive maintenance (PM) schedule compliance, spare parts inventory control, and MTTR/MTBF breakdown analytics.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <span class="status-pill"><span class="pulse-dot"></span> Live on Plant Intranet</span>
+        </div>
+      </div>
+
+      <!-- Metadata Matrix -->
+      <div class="product-meta-matrix">
+        <div class="meta-item">
+          <div class="meta-label">Primary Department</div>
+          <div class="meta-val"><i class="fa-solid fa-gears"></i> Plant Maintenance</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Technology Stack</div>
+          <div class="meta-val cyan"><i class="fa-solid fa-layer-group"></i> Python Flask & Nginx SSL</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target Users</div>
+          <div class="meta-val"><i class="fa-solid fa-users"></i> Mechanics, Line Chiefs, HODs</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Database Architecture</div>
+          <div class="meta-val emerald"><i class="fa-solid fa-database"></i> PostgreSQL & SQLite</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Page Sticky Nav -->
+  <nav class="page-nav-bar">
+    <div class="container">
+      <ul class="page-nav-links">
+        <li class="page-nav-item active"><a href="#problem">The Problem</a></li>
+        <li class="page-nav-item"><a href="#solution">Solution & Features</a></li>
+        <li class="page-nav-item"><a href="#architecture">Architecture</a></li>
+        <li class="page-nav-item"><a href="#ui-showcase">UI & Workflows</a></li>
+        <li class="page-nav-item"><a href="#impact">Business Impact</a></li>
+        <li class="page-nav-item"><a href="#takeaway">Key Takeaway</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Sections -->
+  <main class="container">
+
+    <!-- Section 1: The Industrial Problem -->
+    <section id="problem" class="product-section">
+      <span class="section-label-tag">THE SHOPFLOOR BOTTLENECK</span>
+      <h2 class="section-h2">Why CMMS Was Built</h2>
+      <p class="section-lead">
+        In high-volume garment manufacturing facilities with over 1,500+ sewing, cutting, and finishing machines, traditional maintenance was managed through paper work orders and manual whiteboards.
+      </p>
+
+      <div class="problem-solution-grid">
+        <div class="ps-card problem">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+            <h3>Operational Pain Points</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-xmark"></i> <strong>Unplanned Line Stoppages:</strong> Lack of preventive maintenance tracking led to sudden sewing machine motor burnouts and needle feed failures during peak orders.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Untracked Machine Movements:</strong> Machinery moved across lines without digital logs, causing lost assets and phantom inventories.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Critical Spare Stockouts:</strong> Mechanics took spare parts without real-time inventory deductions, leaving the storeroom dry during critical breakdowns.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>No MTTR / MTBF Telemetry:</strong> Management had zero visibility into mechanic response times or repeat machine failure rates.</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-shield-check"></i></div>
+            <h3>The CMMS Solution</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-check"></i> <strong>Automated PM Schedules:</strong> Calendar-driven preventive maintenance alerts ensuring every single machine is serviced before failure.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Machine Transfer Workflow:</strong> Rigorous digital sign-off when machines move between sewing lines or across factories.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Live Spare Issuance & Reorder Points:</strong> Automated minimum stock triggers preventing stockouts of needles, loopers, and motors.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Breakdown Telemetry & KPI Wallboard:</strong> Instant calculation of Mean Time To Repair (MTTR) and Mean Time Between Failures (MTBF).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Key Features -->
+    <section id="solution" class="product-section">
+      <span class="section-label-tag">ENGINEERING CAPABILITIES</span>
+      <h2 class="section-h2">Core Enterprise Modules & Production Tabs</h2>
+
+      <div class="feature-matrix-grid">
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-qrcode"></i></div>
+            <span class="feature-number">01</span>
+          </div>
+          <h4>Machine Master & Asset Registry</h4>
+          <p>Comprehensive digital passport for every asset: model, serial number, motor specs, purchase date, current line assignment, and lifetime service history.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <span class="feature-number">02</span>
+          </div>
+          <h4>PM Execution & Management</h4>
+          <p>Automated preventive maintenance frequency engine (weekly, monthly, quarterly) with standard servicing checklists and digital mechanic sign-offs.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <span class="feature-number">03</span>
+          </div>
+          <h4>Breakdown Management</h4>
+          <p>Instant breakdown logging from sewing lines. Dispatches work orders to on-duty mechanics, records breakdown root cause, and timestamps resolution time.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+            <span class="feature-number">04</span>
+          </div>
+          <h4>Spare Parts & Issuance</h4>
+          <p>Complete storeroom catalog with bin locations, minimum threshold safety stock alerts, and automated issuance linking parts consumed to specific machines.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-right-left"></i></div>
+            <span class="feature-number">05</span>
+          </div>
+          <h4>Machine Relocation Transfers</h4>
+          <p>Inter-line and inter-plant movement logging with digital custodian transfer approval, ensuring complete, real-time floor asset visibility.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="feature-number">06</span>
+          </div>
+          <h4>Reports, MTTR & MTBF Analytics</h4>
+          <p>Executive analytics calculating Mean Time To Repair, Mean Time Between Failures, technician response rates, and spare parts expenditure trends.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Architecture -->
+    <section id="architecture" class="product-section">
+      <span class="section-label-tag">TECHNICAL BLUEPRINT</span>
+      <h2 class="section-h2">System Architecture & Production Deployment</h2>
+      <p class="section-lead">
+        Engineered with a modular Flask blueprint architecture, hardened behind an Nginx reverse proxy with SSL encryption and automated database backups.
+      </p>
+
+      <div class="arch-diagram-wrapper">
+        <div class="arch-header-bar">
+          <div class="arch-terminal-dots">
+            <span class="arch-dot dot-red"></span>
+            <span class="arch-dot dot-yellow"></span>
+            <span class="arch-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #38bdf8;">
+            <i class="fa-solid fa-diagram-project" style="margin-right: 6px;"></i> CMMS End-to-End Operational & System Flowchart
+          </span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: var(--emerald); font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">ACTIVE SHOPFLOOR FLOW</span>
+        </div>
+
+        <div class="visual-arch-pipeline">
+          <!-- Step 1 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 01</span>
+              <div class="arch-node-icon" style="color: #38bdf8;"><i class="fa-solid fa-tablet-screen-button"></i></div>
+            </div>
+            <div class="arch-node-title">Shopfloor Mechanics & Supervisors</div>
+            <div class="arch-node-subtitle">Mobile Intake & Requests</div>
+            <div class="arch-node-desc">Line mechanics and sewing supervisors log breakdowns, scan machine QR codes, and request spare parts directly on shopfloor tablets.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Floor Tablet UI</span>
+              <span class="arch-tech-pill">Machine QR Codes</span>
+              <span class="arch-tech-pill">Responsive PWA</span>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 02</span>
+              <div class="arch-node-icon" style="color: #a78bfa;"><i class="fa-solid fa-shield-halved"></i></div>
+            </div>
+            <div class="arch-node-title">Secure Reverse Proxy Gateway</div>
+            <div class="arch-node-subtitle">Network & SSL Security</div>
+            <div class="arch-node-desc">Terminates SSL, filters unauthorized factory intranet traffic, protects against rate surges, and caches static styling assets.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Nginx Gateway</span>
+              <span class="arch-tech-pill">SSL / HTTPS</span>
+              <span class="arch-tech-pill">Asset Caching</span>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 03</span>
+              <div class="arch-node-icon" style="color: #f59e0b;"><i class="fa-solid fa-gears"></i></div>
+            </div>
+            <div class="arch-node-title">Modular Flask Business Engine</div>
+            <div class="arch-node-subtitle">Maintenance Core Logic</div>
+            <div class="arch-node-desc">Dispatches active work orders, triggers storeroom spare inventory alerts, tracks PM intervals, and logs technician repair times.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Python Flask</span>
+              <span class="arch-tech-pill">Modular Blueprints</span>
+              <span class="arch-tech-pill">PM Engine</span>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 04</span>
+              <div class="arch-node-icon" style="color: #10b981;"><i class="fa-solid fa-chart-pie"></i></div>
+            </div>
+            <div class="arch-node-title">PostgreSQL Ledger & MTTR BI</div>
+            <div class="arch-node-subtitle">Executive Intelligence</div>
+            <div class="arch-node-desc">Maintains machine health history, logs parts consumption, and generates real-time Mean Time To Repair (MTTR) performance analytics.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">PostgreSQL DB</span>
+              <span class="arch-tech-pill">MTTR / MTBF BI</span>
+              <span class="arch-tech-pill">Auto DB Backups</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-flow-summary-bar">
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-bolt"></i> <span><strong>Processing:</strong> Instant breakdown ticketing & dispatch</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-shield-halved"></i> <span><strong>Security:</strong> SSL encrypted intranet & role access</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-chart-line"></i> <span><strong>Business Value:</strong> Higher machine uptime & lower spare wastage</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-tech-grid">
+        <div class="arch-tech-item">
+          <h5><i class="fa-brands fa-python" style="color: #38bdf8;"></i> Flask & Blueprints</h5>
+          <p>Clean modular separation of concerns. Scalable route isolation across machine assets, breakdowns, and storeroom issuance.</p>
+        </div>
+        <div class="arch-tech-item">
+          <h5><i class="fa-solid fa-database" style="color: #10b981;"></i> PostgreSQL & SQLite</h5>
+          <p>Strict schema integrity, foreign-key constraints on machine spare parts, and indexed breakdown timestamps for fast MTTR aggregation.</p>
+        </div>
+        <div class="arch-tech-item">
+          <h5><i class="fa-solid fa-shield-halved" style="color: #f59e0b;"></i> Enterprise Security</h5>
+          <p>Configured with SSL cert generation, batch password hashing, Nginx security hardening, and role-based access control.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: UI Showcase -->
+    <section id="ui-showcase" class="product-section">
+      <span class="section-label-tag">ACTUAL APPLICATION INTERFACE</span>
+      <h2 class="section-h2">CMMS PRO Dashboard & Navigation</h2>
+
+      <div class="ui-mockup-frame">
+        <!-- App Title & Navigation Bar -->
+        <div class="ui-mockup-bar" style="background: #0b1329; border-bottom: 1px solid rgba(56,189,248,0.2); padding: 10px 16px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-gear" style="color: var(--cyan);"></i>
+            <span style="font-weight: 700; letter-spacing: 0.05em; color: #fff;">CMMS PRO</span>
+            <span style="font-size: 0.72rem; background: rgba(56,189,248,0.15); color: var(--cyan); padding: 2px 8px; border-radius: 4px;">v2.4 Live</span>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">
+            <i class="fa-solid fa-circle" style="color: var(--emerald); font-size: 0.55rem;"></i> Nginx SSL • Enterprise Plant Network
+          </div>
+        </div>
+
+        <!-- Interactive Tabs Bar -->
+        <div class="app-tab-bar">
+          <button class="app-tab-btn active" data-tab-target="tab-cmms-dash"><i class="fa-solid fa-gauge"></i> Dashboard & Work Orders</button>
+          <button class="app-tab-btn" data-tab-target="tab-cmms-machines"><i class="fa-solid fa-server"></i> Machine Master</button>
+          <button class="app-tab-btn" data-tab-target="tab-cmms-spares"><i class="fa-solid fa-boxes-stacked"></i> Spare Inventory</button>
+          <button class="app-tab-btn" data-tab-target="tab-cmms-pm"><i class="fa-solid fa-calendar-check"></i> PM Schedule</button>
+        </div>
+
+        <!-- Tab Panel 1: Dashboard & Work Orders -->
+        <div id="tab-cmms-dash" class="app-tab-panel active">
+          <!-- Live Scorecards -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 18px 16px 14px 16px;">
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">ASSET SYNC (ONLINE / FLEET)</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--cyan);">1,482 <span style="font-size: 0.95rem; color: var(--text-muted); font-weight: 400;">/ 1,510</span></div>
+              <div style="font-size: 0.75rem; color: var(--emerald);"><i class="fa-solid fa-circle-check"></i> High Fleet Availability</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">ACTIVE BREAKDOWNS</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--amber);">4 <span style="font-size: 0.95rem; color: var(--text-muted); font-weight: 400;">In Progress</span></div>
+              <div style="font-size: 0.75rem; color: var(--amber);"><i class="fa-solid fa-clock"></i> Rapid Response Mode</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">RESUPPLY LOGIC</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--rose);">3 <span style="font-size: 0.95rem; color: var(--text-muted); font-weight: 400;">SKUs Reordered</span></div>
+              <div style="font-size: 0.75rem; color: var(--rose);"><i class="fa-solid fa-triangle-exclamation"></i> Safety Stock Triggered</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">PREVENTIVE MAINTENANCE</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--emerald);">On Track</div>
+              <div style="font-size: 0.75rem; color: var(--emerald);"><i class="fa-solid fa-check-double"></i> Weekly Target Met</div>
+            </div>
+          </div>
+
+          <!-- Breakdown Management Grid -->
+          <div style="background: rgba(2,6,23,0.7); margin: 0 16px 16px 16px; padding: 16px; border-radius: 8px; border: 1px solid rgba(56,189,248,0.2);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <div style="font-size: 0.82rem; font-weight: 700; color: #fff;">
+                <i class="fa-solid fa-list-check" style="color: var(--cyan); margin-right: 6px;"></i> ACTIVE BREAKDOWN WORK ORDERS
+              </div>
+              <span style="font-size: 0.72rem; background: rgba(56,189,248,0.15); color: var(--cyan); padding: 3px 10px; border-radius: 4px;">Live WebSocket Stream</span>
+            </div>
+            <div style="overflow-x: auto;">
+              <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+                <thead>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                    <th style="padding: 8px 6px;">Ticket</th>
+                    <th style="padding: 8px 6px;">Machine Tag</th>
+                    <th style="padding: 8px 6px;">Line</th>
+                    <th style="padding: 8px 6px;">Model / Brand</th>
+                    <th style="padding: 8px 6px;">Failure Category</th>
+                    <th style="padding: 8px 6px;">Technician</th>
+                    <th style="padding: 8px 6px;">Status</th>
+                  </tr>
+                </thead>
+                <tbody style="color: var(--text-secondary);">
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">#WO-5102</td>
+                    <td style="padding: 8px 6px; font-weight: 600; color: #fff;">SN-04-JUK</td>
+                    <td style="padding: 8px 6px;">Sewing Line 04</td>
+                    <td style="padding: 8px 6px;">Juki DDL-9000C</td>
+                    <td style="padding: 8px 6px;">Thread Trimmer Knife Jam</td>
+                    <td style="padding: 8px 6px;">M. Rahman</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--amber); background: rgba(245,158,11,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">IN PROGRESS</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">#WO-5103</td>
+                    <td style="padding: 8px 6px; font-weight: 600; color: #fff;">SN-11-YAM</td>
+                    <td style="padding: 8px 6px;">Sewing Line 11</td>
+                    <td style="padding: 8px 6px;">Yamato Overlock 5-Th</td>
+                    <td style="padding: 8px 6px;">Oil Pump Pressure Drop</td>
+                    <td style="padding: 8px 6px;">K. Sharma</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--rose); background: rgba(244,63,94,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">ATTENTION DUE</span></td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">#WO-5099</td>
+                    <td style="padding: 8px 6px; font-weight: 600; color: #fff;">CT-01-EST</td>
+                    <td style="padding: 8px 6px;">Cutting Table 01</td>
+                    <td style="padding: 8px 6px;">Eastman AutoCutter</td>
+                    <td style="padding: 8px 6px;">Sharpening Stone Assembly</td>
+                    <td style="padding: 8px 6px;">A. Farooqi</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--emerald); background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">RESOLVED</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Panel 2: Machine Master -->
+        <div id="tab-cmms-machines" class="app-tab-panel">
+          <div style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="font-size: 0.85rem; font-weight: 700; color: #fff;"><i class="fa-solid fa-server" style="color: var(--cyan); margin-right: 6px;"></i> Machinery Master Registry (1,510 Assets)</span>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Real-Time Plant Floor Location</span>
+            </div>
+            <div style="overflow-x: auto; background: rgba(2,6,23,0.7); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); padding: 12px;">
+              <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+                <thead>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                    <th style="padding: 8px 6px;">Asset Tag</th>
+                    <th style="padding: 8px 6px;">Machine Type</th>
+                    <th style="padding: 8px 6px;">Brand & Model</th>
+                    <th style="padding: 8px 6px;">Assigned Line</th>
+                    <th style="padding: 8px 6px;">Serial Number</th>
+                    <th style="padding: 8px 6px;">Motor Spec</th>
+                    <th style="padding: 8px 6px;">Health</th>
+                  </tr>
+                </thead>
+                <tbody style="color: var(--text-secondary);">
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">MC-JK-0482</td>
+                    <td style="padding: 8px 6px; color: #fff; font-weight: 600;">Single Needle Lockstitch</td>
+                    <td style="padding: 8px 6px;">Juki DDL-9000C</td>
+                    <td style="padding: 8px 6px;">Sewing Line 03 (Bay A)</td>
+                    <td style="padding: 8px 6px; font-family: var(--font-mono);">JK-2023-9918</td>
+                    <td style="padding: 8px 6px;">Direct Drive 550W Servo</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--emerald); background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">OPERATIONAL</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">MC-YM-0193</td>
+                    <td style="padding: 8px 6px; color: #fff; font-weight: 600;">5-Thread Overlock</td>
+                    <td style="padding: 8px 6px;">Yamato AZ8500G</td>
+                    <td style="padding: 8px 6px;">Sewing Line 08 (Bay B)</td>
+                    <td style="padding: 8px 6px; font-family: var(--font-mono);">YM-2022-7712</td>
+                    <td style="padding: 8px 6px;">Integrated Vacuum Assist</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--emerald); background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">OPERATIONAL</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">MC-BR-0044</td>
+                    <td style="padding: 8px 6px; color: #fff; font-weight: 600;">Electronic Eyelet Buttonhole</td>
+                    <td style="padding: 8px 6px;">Brother RH-9820</td>
+                    <td style="padding: 8px 6px;">Finishing Line 02</td>
+                    <td style="padding: 8px 6px; font-family: var(--font-mono);">BR-2021-3489</td>
+                    <td style="padding: 8px 6px;">Pneumatic Knife / Stepper</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--amber); background: rgba(245,158,11,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">PM PENDING</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Panel 3: Spare Inventory -->
+        <div id="tab-cmms-spares" class="app-tab-panel">
+          <div style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="font-size: 0.85rem; font-weight: 700; color: #fff;"><i class="fa-solid fa-boxes-stacked" style="color: var(--cyan); margin-right: 6px;"></i> Storeroom Spare Parts Inventory</span>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Automated Reorder Thresholds</span>
+            </div>
+            <div style="overflow-x: auto; background: rgba(2,6,23,0.7); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); padding: 12px;">
+              <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+                <thead>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                    <th style="padding: 8px 6px;">Part Code</th>
+                    <th style="padding: 8px 6px;">Description</th>
+                    <th style="padding: 8px 6px;">Machine Brand</th>
+                    <th style="padding: 8px 6px;">Bin Location</th>
+                    <th style="padding: 8px 6px; text-align: right;">Current Stock</th>
+                    <th style="padding: 8px 6px; text-align: right;">Safety Min</th>
+                    <th style="padding: 8px 6px;">Status</th>
+                  </tr>
+                </thead>
+                <tbody style="color: var(--text-secondary);">
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">SP-KN-0144</td>
+                    <td style="padding: 8px 6px; color: #fff; font-weight: 600;">Moving Knife Assembly</td>
+                    <td style="padding: 8px 6px;">Juki Lockstitch</td>
+                    <td style="padding: 8px 6px;">Rack S-02 / Shelf B</td>
+                    <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono); color: var(--emerald);">28 pcs</td>
+                    <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">10 pcs</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--emerald); background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">HEALTHY</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">SP-LP-0291</td>
+                    <td style="padding: 8px 6px; color: #fff; font-weight: 600;">Upper Looper (Titanium Coated)</td>
+                    <td style="padding: 8px 6px;">Yamato Overlock</td>
+                    <td style="padding: 8px 6px;">Rack S-04 / Shelf A</td>
+                    <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono); color: var(--amber);">4 pcs</td>
+                    <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">8 pcs</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--amber); background: rgba(245,158,11,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">PO GENERATED</span></td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">SP-ND-0012</td>
+                    <td style="padding: 8px 6px; color: #fff; font-weight: 600;">Groz-Beckert Needles DBx1 #11</td>
+                    <td style="padding: 8px 6px;">Universal</td>
+                    <td style="padding: 8px 6px;">Rack S-01 / Drawer 03</td>
+                    <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono); color: var(--emerald);">450 pkts</td>
+                    <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">100 pkts</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--emerald); background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">HEALTHY</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Panel 4: PM Schedule -->
+        <div id="tab-cmms-pm" class="app-tab-panel">
+          <div style="padding: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="font-size: 0.85rem; font-weight: 700; color: #fff;"><i class="fa-solid fa-calendar-check" style="color: var(--cyan); margin-right: 6px;"></i> Preventive Maintenance Schedule & Execution</span>
+              <span style="font-size: 0.75rem; color: var(--text-muted);">Pre-Scheduled Service Calendar</span>
+            </div>
+            <div style="overflow-x: auto; background: rgba(2,6,23,0.7); border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); padding: 12px;">
+              <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+                <thead>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                    <th style="padding: 8px 6px;">Machine Tag</th>
+                    <th style="padding: 8px 6px;">Line Location</th>
+                    <th style="padding: 8px 6px;">PM Type</th>
+                    <th style="padding: 8px 6px;">Last Completed</th>
+                    <th style="padding: 8px 6px;">Next Scheduled</th>
+                    <th style="padding: 8px 6px;">Assigned Tech</th>
+                    <th style="padding: 8px 6px;">Compliance</th>
+                  </tr>
+                </thead>
+                <tbody style="color: var(--text-secondary);">
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">MC-JK-0482</td>
+                    <td style="padding: 8px 6px;">Sewing Line 03</td>
+                    <td style="padding: 8px 6px; color: #fff;">Monthly Deep Clean & Oil Flush</td>
+                    <td style="padding: 8px 6px;">15-08-2026</td>
+                    <td style="padding: 8px 6px; color: var(--cyan); font-weight: 600;">22-09-2026 (Today)</td>
+                    <td style="padding: 8px 6px;">M. Rahman</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--cyan); background: rgba(56,189,248,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">DUE TODAY</span></td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                    <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">CT-01-EST</td>
+                    <td style="padding: 8px 6px;">Cutting Table 01</td>
+                    <td style="padding: 8px 6px; color: #fff;">Bi-Weekly Bristle Bed & Vacuum Inspection</td>
+                    <td style="padding: 8px 6px;">10-09-2026</td>
+                    <td style="padding: 8px 6px;">24-09-2026</td>
+                    <td style="padding: 8px 6px;">A. Farooqi</td>
+                    <td style="padding: 8px 6px;"><span style="color: var(--emerald); background: rgba(16,185,129,0.15); padding: 2px 6px; border-radius: 3px; font-size: 0.72rem;">SCHEDULED</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Qualitative Business Impact -->
+    <section id="impact" class="product-section">
+      <span class="section-label-tag">TANGIBLE VALUE DELIVERED</span>
+      <h2 class="section-h2">Operational Impact & Workload Reduction</h2>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <div class="roi-headline">Workload Reduction</div>
+          <div class="roi-metric-name">Downtime & Breakdown Stoppages</div>
+          <p class="roi-detail">Proactive maintenance scheduling significantly lowered sudden line breakdowns and technician emergency repair workload.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <div class="roi-headline">Less Paperwork</div>
+          <div class="roi-metric-name">Digital Work Orders & Logbooks</div>
+          <p class="roi-detail">Completely eliminated physical clipboards and handwritten technician registers with structured digital workflows.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="roi-headline">Inventory Control</div>
+          <div class="roi-metric-name">Automated Reorder Alerts</div>
+          <p class="roi-detail">Automated minimum safety stock triggers ensured high-wear needles, loopers, and motors were replenished before stockouts occurred.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="roi-headline">Fleet Visibility</div>
+          <div class="roi-metric-name">Real-Time Machine Asset Tracking</div>
+          <p class="roi-detail">Centralized location and transfer histories for every sewing, cutting, and finishing machine across all plant lines.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Key Takeaway -->
+    <section id="takeaway" class="product-section">
+      <div class="recruiter-banner">
+        <div class="recruiter-icon-badge"><i class="fa-solid fa-user-check"></i></div>
+        <div class="recruiter-takeaway-content">
+          <h4>Key Takeaway: My Engineering & Operational Impact</h4>
+          <p>
+            I engineered CMMS to solve high-friction physical bottlenecks across our factory maintenance floor. I architected the relational database schema, established strict foreign-key integrity between machine assets and spare parts storerooms, deployed the production environment behind Nginx with custom SSL certificates, and developed intuitive mechanic workflows. By converting paper-based reactive repairs into schedule-driven preventive maintenance, my system significantly reduced technician workload, slashed breakdown downtime, and completely eliminated critical spare part stockouts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pager Navigation -->
+    <div class="app-pager-nav">
+      <a href="../index.html#apps" class="pager-btn">
+        <i class="fa-solid fa-grid-2"></i> All Systems
+      </a>
+      <a href="pse.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">Next Application</span>
+          <span class="app-name">PSE & CTQ Platform →</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <img src="" alt="Screenshot" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Rajan Singh</strong> • CMMS Product Showcase</div>
+      <div>Sidney Apparels LLC / Kingsville Garments</div>
+    </div>
+  </footer>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>
