@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunger Kanban | Real-Time Sewing WIP Starvation Engine — Rajan Singh Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-group">
+        <div class="brand-logo-frame"><i class="fa-solid fa-microchip"></i></div>
+        <div class="brand-titles">
+          <h1>Rajan Singh <span class="nav-badge">PORTFOLIO</span></h1>
+          <p>Asst. Manager — Digitalization</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="../index.html#apps" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> All 15 Systems</a>
+        <a href="mailto:rajan321singh@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Rajan</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="product-topbar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" class="breadcrumb-link"><i class="fa-solid fa-house"></i> Portfolio</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="../index.html#apps" class="breadcrumb-link">Cutting & Sewing</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Hunger Kanban</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-header">
+        <div class="product-title-group">
+          <div class="product-tagline">
+            <i class="fa-solid fa-chart-gantt"></i> REAL-TIME MATERIAL STARVATION PREVENTION
+          </div>
+          <h1 class="product-h1">Hunger Kanban: Predictive Sewing WIP Monitoring</h1>
+          <p class="product-lead">
+            An intelligent manufacturing telemetry engine that continuously calculates live sewing line WIP deficit ratios against a 1.5-day production buffer, answering in real time: <em>"Which sewing line is starving and needs the cutting floor to feed them material right now?"</em>
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <span class="status-pill"><span class="pulse-dot"></span> Live • 2-Min Auto Polling</span>
+        </div>
+      </div>
+
+      <div class="product-meta-matrix">
+        <div class="meta-item">
+          <div class="meta-label">Primary Department</div>
+          <div class="meta-val"><i class="fa-solid fa-scissors"></i> Cutting & Sewing Lines</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Technology Stack</div>
+          <div class="meta-val cyan"><i class="fa-solid fa-layer-group"></i> Node.js & SSE Telemetry</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target Users</div>
+          <div class="meta-val"><i class="fa-solid fa-users"></i> Cutting Supervisors, Line Chiefs, IE</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Database Architecture</div>
+          <div class="meta-val emerald"><i class="fa-solid fa-database"></i> Node.js, Express, MSSQL (GPRO)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-nav-bar">
+    <div class="container">
+      <ul class="page-nav-links">
+        <li class="page-nav-item active"><a href="#problem">The Problem</a></li>
+        <li class="page-nav-item"><a href="#solution">Features & Tabs</a></li>
+        <li class="page-nav-item"><a href="#architecture">Architecture</a></li>
+        <li class="page-nav-item"><a href="#ui-showcase">Interactive UI</a></li>
+        <li class="page-nav-item"><a href="#impact">Business Impact</a></li>
+        <li class="page-nav-item"><a href="#takeaway">Key Takeaway</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Problem -->
+    <section id="problem" class="product-section">
+      <span class="section-label-tag">CRITICAL SHOPFLOOR BOTTLENECK</span>
+      <h2 class="section-h2">The Cost of "Starving" Sewing Lines</h2>
+      <p class="section-lead">
+        In apparel manufacturing, sewing operators represent the highest direct labor cost. When the cutting floor cuts the wrong orders or delays feeding, sewing lines run dry ("starvation"), causing massive productivity drops and expensive delivery delays.
+      </p>
+
+      <div class="problem-solution-grid">
+        <div class="ps-card problem">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h3>Pre-Kanban Reality</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-xmark"></i> <strong>Blind Cutting Schedules:</strong> Cutting supervisors cut orders based on paper plans rather than what sewing lines were actually consuming in real time.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Idle Sewing Operators:</strong> Entire lines of 40–60 operators sat idle waiting for cut bundles, burning hundreds of non-productive hours.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Lagging Report Data:</strong> Traditional WIP reports were generated in Excel at the end of the day—hours too late to prevent line shutdowns.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Supermarket Inventory Hiding:</strong> Cut pieces sat forgotten in intermediate storage racks while line supervisors scrambled for work.</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>The Hunger Kanban Solution</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-check"></i> <strong>Real-Time MES Telemetry:</strong> Live stream querying GPRO MES directly every 120 seconds to compute exact piece counts inside each line.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Color-Coded Priority Alerts:</strong> Instant visual cues (Red: Critical WIP Gap, Orange: Hungry, Green: Balanced) forcing proactive replenishment.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Cutting Priority Filtering:</strong> Automatically hides healthy lines and surfaces only POs that the cutting room needs to cut right now.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Supermarket WIP Visibility:</strong> Shows cut pieces ready in Supermarket waiting to enter Sewing Input, bridging the departmental gap.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features & Tabs -->
+    <section id="solution" class="product-section">
+      <span class="section-label-tag">THREE SPECIALIZED PRODUCTION TABS</span>
+      <h2 class="section-h2">Production Tabs & Features</h2>
+      <p class="section-lead">
+        Tailored interface modes engineered for the specific daily needs of Cutting managers, Sewing line chiefs, and Industrial Engineering leadership.
+      </p>
+
+      <div class="feature-matrix-grid">
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: var(--cyan);"><i class="fa-solid fa-scissors"></i></div>
+            <span class="feature-number">TAB 1</span>
+          </div>
+          <h4>Cutting Floor Priority View</h4>
+          <p>Dedicated queue for cutting supervisors. Filters out healthy lines and ranks hungry lines by severity, showing exactly which POs and colorways must be laid and cut immediately.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: var(--amber);"><i class="fa-solid fa-bars-progress"></i></div>
+            <span class="feature-number">TAB 2</span>
+          </div>
+          <h4>Sewing Line WIP Drilldown</h4>
+          <p>Provides sewing line chiefs an instant breakdown of active orders, current line WIP (Sewing Input minus Sewing Output), Supermarket In stock ready for feeding, and balance remaining to input.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: var(--emerald);"><i class="fa-solid fa-table-columns"></i></div>
+            <span class="feature-number">TAB 3</span>
+          </div>
+          <h4>Executive Summary Wallboard</h4>
+          <p>Plant-wide overview designed for large overhead TV displays and operations leadership to monitor factory-wide WIP balance and pacing across all manufacturing units.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: var(--rose);"><i class="fa-solid fa-rotate"></i></div>
+            <span class="feature-number">FEATURE</span>
+          </div>
+          <h4>Hands-Free TV Auto-Scroll</h4>
+          <p>Automated viewport cycling designed for shopfloor wallboards. Automatically scrolls through active production lines every 15 seconds without requiring manual interaction.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: var(--cyan);"><i class="fa-solid fa-database"></i></div>
+            <span class="feature-number">FEATURE</span>
+          </div>
+          <h4>GPRO MES Direct Bridge</h4>
+          <p>Pulls transactional station records directly from SQL Server with zero manual re-entry, calculating true line WIP dynamically from station barcode scans.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: var(--amber);"><i class="fa-solid fa-layer-group"></i></div>
+            <span class="feature-number">FEATURE</span>
+          </div>
+          <h4>Supermarket Buffer Integration</h4>
+          <p>Instantly reveals cut bundles sitting in intermediate supermarket racks, preventing redundant recutting when work is already prepared.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="product-section">
+      <span class="section-label-tag">TECHNICAL SPECIFICATION</span>
+      <h2 class="section-h2">High-Throughput Polling Engine</h2>
+      <p class="section-lead">
+        Engineered with a lightweight Node.js Express server that aggregates heavy SQL queries in memory, protecting the operational MES database while serving dozens of real-time clients.
+      </p>
+
+            <div class="arch-diagram-wrapper">
+        <div class="arch-header-bar">
+          <div class="arch-terminal-dots">
+            <span class="arch-dot dot-red"></span>
+            <span class="arch-dot dot-yellow"></span>
+            <span class="arch-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #38bdf8;">
+            <i class="fa-solid fa-diagram-project" style="margin-right: 6px;"></i> Hunger Kanban End-to-End Operational & System Flowchart
+          </span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: var(--emerald); font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">ACTIVE SHOPFLOOR FLOW</span>
+        </div>
+
+        <div class="visual-arch-pipeline">
+          <!-- Stage 01 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 01</span>
+              <div class="arch-node-icon" style="color: #38bdf8;"><i class="fa-solid fa-barcode"></i></div>
+            </div>
+            <div class="arch-node-title">Shopfloor Bundle Scanners</div>
+            <div class="arch-node-subtitle">Real-Time Tracking Points</div>
+            <div class="arch-node-desc">Automated station scans record bundle movements across Cutting Output, Supermarket In, Sewing Input, and Sewing Output.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">GPRO RFID Scanners</span><span class="arch-tech-pill">WLAN Handhelds</span><span class="arch-tech-pill">Sub-Second Scans</span>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 02</span>
+              <div class="arch-node-icon" style="color: #a78bfa;"><i class="fa-solid fa-network-wired"></i></div>
+            </div>
+            <div class="arch-node-title">Telemetry Stream Ingestion</div>
+            <div class="arch-node-subtitle">Real-Time Pipeline</div>
+            <div class="arch-node-desc">Polls and ingests high-frequency MES production events every 120 seconds directly from factory server clusters.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Node.js Pipeline</span><span class="arch-tech-pill">MSSQL Connector</span><span class="arch-tech-pill">Event Ingestion</span>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 03</span>
+              <div class="arch-node-icon" style="color: #f59e0b;"><i class="fa-solid fa-brain"></i></div>
+            </div>
+            <div class="arch-node-title">Dynamic WIP Deficit Engine</div>
+            <div class="arch-node-subtitle">Starvation Analysis</div>
+            <div class="arch-node-desc">Computes actual line output over rolling 6-day windows and evaluates WIP against required 1.5-day line safety buffers.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Deficit Ranking</span><span class="arch-tech-pill">Rolling Working Days</span><span class="arch-tech-pill">Color Logic</span>
+            </div>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 04</span>
+              <div class="arch-node-icon" style="color: #10b981;"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            </div>
+            <div class="arch-node-title">Shopfloor TV Hunger Wallboard</div>
+            <div class="arch-node-subtitle">Real-Time Shortage Alerts</div>
+            <div class="arch-node-desc">Auto-scrolling big-screen displays show starving lines in Red, hungry in Orange, and balanced in Green for instant action.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Hands-Free Auto-Scroll</span><span class="arch-tech-pill">Audio-Visual Alert</span><span class="arch-tech-pill">Cutting Priority</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-flow-summary-bar">
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-bolt"></i> <span><strong>Processing:</strong> Sub-2-minute MES event stream ingestion</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-shield-halved"></i> <span><strong>Security:</strong> Read-only intranet database isolation</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-chart-line"></i> <span><strong>Business Value:</strong> Guarantees zero sewing line starvation & zero idle time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Showcase -->
+    <section id="ui-showcase" class="product-section">
+      <span class="section-label-tag">ACTUAL APPLICATION INTERFACE</span>
+      <h2 class="section-h2">GPRO MES Kanban Live Production Screen</h2>
+
+      <div class="ui-mockup-frame">
+        <!-- Real App Header -->
+        <div class="ui-mockup-bar" style="background: #091024; border-bottom: 1px solid rgba(56,189,248,0.2); padding: 10px 16px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-table-cells-large" style="color: var(--cyan);"></i>
+            <span style="font-weight: 700; color: #fff; letter-spacing: 0.04em;">GPRO MES KANBAN</span>
+            <span style="font-size: 0.72rem; background: rgba(56,189,248,0.15); color: var(--cyan); padding: 2px 8px; border-radius: 4px;">Real-Time MES</span>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); display: flex; align-items: center; gap: 14px;">
+            <span><i class="fa-solid fa-circle" style="color: var(--emerald); font-size: 0.55rem;"></i> Auto-Scroll: <strong>ON (15s)</strong></span>
+            <span><i class="fa-solid fa-clock"></i> Sync: <strong>Just Now</strong></span>
+          </div>
+        </div>
+
+        <!-- Real App Tabs Bar -->
+        <div class="app-tab-bar" style="border-bottom: 1px solid rgba(255,255,255,0.06); padding: 8px 16px; background: rgba(15,23,42,0.9); display: flex; justify-content: space-between; align-items: center;">
+          <div style="display: flex; gap: 8px;">
+            <button class="app-tab-btn active" data-tab-target="tab-hk-cutting"><i class="fa-solid fa-scissors"></i> CUTTING QUEUE</button>
+            <button class="app-tab-btn" data-tab-target="tab-hk-line"><i class="fa-solid fa-bars-progress"></i> SEWING LINE WIP</button>
+            <button class="app-tab-btn" data-tab-target="tab-hk-summary"><i class="fa-solid fa-chart-pie"></i> PLANT SUMMARY</button>
+          </div>
+          <!-- Alert Badges -->
+          <div style="display: flex; gap: 8px; font-size: 0.72rem;">
+            <span style="background: rgba(244,63,94,0.18); color: var(--rose); border: 1px solid rgba(244,63,94,0.3); padding: 3px 10px; border-radius: 4px; font-weight: 700;">
+              CRITICAL: 2
+            </span>
+            <span style="background: rgba(245,158,11,0.18); color: var(--amber); border: 1px solid rgba(245,158,11,0.3); padding: 3px 10px; border-radius: 4px; font-weight: 700;">
+              HUNGRY: 3
+            </span>
+            <span style="background: rgba(16,185,129,0.18); color: var(--emerald); border: 1px solid rgba(16,185,129,0.3); padding: 3px 10px; border-radius: 4px; font-weight: 700;">
+              BALANCED: 12
+            </span>
+          </div>
+        </div>
+
+        <!-- Panel 1: Cutting Floor Priority View -->
+        <div id="tab-hk-cutting" class="app-tab-panel active" style="padding: 14px 16px; overflow-x: auto;">
+          <div style="margin-bottom: 10px; font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+            <span><i class="fa-solid fa-filter" style="color: var(--cyan);"></i> Filtered View: Lines ranked by deficit severity (Feeding Priority)</span>
+            <span style="color: var(--rose); font-weight: 600;"><i class="fa-solid fa-triangle-exclamation"></i> Action Required: Lay & Cut for Lines 17 & 04</span>
+          </div>
+          <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+            <thead>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                <th style="padding: 8px 6px;">Priority</th>
+                <th style="padding: 8px 6px;">Line</th>
+                <th style="padding: 8px 6px;">PO Number</th>
+                <th style="padding: 8px 6px;">Colorway</th>
+                <th style="padding: 8px 6px; text-align: right;">Line WIP</th>
+                <th style="padding: 8px 6px; text-align: right;">SMKT Ready</th>
+                <th style="padding: 8px 6px; text-align: right;">Bal to Cut</th>
+                <th style="padding: 8px 6px; text-align: right;">Order Total</th>
+                <th style="padding: 8px 6px; text-align: center;">Hunger Alert</th>
+              </tr>
+            </thead>
+            <tbody style="color: var(--text-secondary);">
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(244,63,94,0.08);">
+                <td style="padding: 10px 6px; font-weight: 700; color: var(--rose);">#1 PRIORITY</td>
+                <td style="padding: 10px 6px; font-weight: 700; color: #fff;">Line 17</td>
+                <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan);">45008912</td>
+                <td style="padding: 10px 6px;">Black Heather</td>
+                <td style="padding: 10px 6px; text-align: right; font-weight: 700; color: var(--rose); font-family: var(--font-mono);">530</td>
+                <td style="padding: 10px 6px; text-align: right; color: var(--amber); font-family: var(--font-mono);">120</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono); color: var(--rose); font-weight: 700;">2,580</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">4,000</td>
+                <td style="padding: 10px 6px; text-align: center;">
+                  <span style="background: #ef4444; color: #fff; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem;">CRITICAL (&lt; 2 Hrs)</span>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(245,158,11,0.06);">
+                <td style="padding: 10px 6px; font-weight: 700; color: var(--amber);">#2 PRIORITY</td>
+                <td style="padding: 10px 6px; font-weight: 700; color: #fff;">Line 04</td>
+                <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan);">45009104</td>
+                <td style="padding: 10px 6px;">Collegiate Navy</td>
+                <td style="padding: 10px 6px; text-align: right; font-weight: 700; color: var(--amber); font-family: var(--font-mono);">450</td>
+                <td style="padding: 10px 6px; text-align: right; color: var(--cyan); font-family: var(--font-mono);">600</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">900</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">3,000</td>
+                <td style="padding: 10px 6px; text-align: center;">
+                  <span style="background: #f59e0b; color: #020617; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem;">HUNGRY (&lt; 4 Hrs)</span>
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(245,158,11,0.04);">
+                <td style="padding: 10px 6px; font-weight: 700; color: var(--amber);">#3 PRIORITY</td>
+                <td style="padding: 10px 6px; font-weight: 700; color: #fff;">Line 12</td>
+                <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan);">45009318</td>
+                <td style="padding: 10px 6px;">Grey Melange</td>
+                <td style="padding: 10px 6px; text-align: right; font-weight: 700; color: var(--amber); font-family: var(--font-mono);">620</td>
+                <td style="padding: 10px 6px; text-align: right; color: var(--cyan); font-family: var(--font-mono);">450</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">1,800</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">5,200</td>
+                <td style="padding: 10px 6px; text-align: center;">
+                  <span style="background: #f59e0b; color: #020617; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem;">HUNGRY</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Panel 2: Sewing Line WIP Drilldown -->
+        <div id="tab-hk-line" class="app-tab-panel" style="padding: 14px 16px; overflow-x: auto;">
+          <div style="margin-bottom: 10px; font-size: 0.78rem; color: var(--text-muted);">
+            <span><i class="fa-solid fa-bars-progress" style="color: var(--cyan);"></i> Plant Line Status: Sewing Input vs Sewing Output (End Line QC Pass)</span>
+          </div>
+          <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+            <thead>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                <th style="padding: 8px 6px;">Line</th>
+                <th style="padding: 8px 6px;">PO Number</th>
+                <th style="padding: 8px 6px;">Colorway</th>
+                <th style="padding: 8px 6px; text-align: right;">Sewing Input</th>
+                <th style="padding: 8px 6px; text-align: right;">Sewing Output</th>
+                <th style="padding: 8px 6px; text-align: right;">Line WIP</th>
+                <th style="padding: 8px 6px; text-align: right;">SMKT WIP</th>
+                <th style="padding: 8px 6px; text-align: right;">Bal to Input</th>
+                <th style="padding: 8px 6px; text-align: center;">Status</th>
+              </tr>
+            </thead>
+            <tbody style="color: var(--text-secondary);">
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                <td style="padding: 10px 6px; font-weight: 700; color: #fff;">Line 01</td>
+                <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan);">45007412</td>
+                <td style="padding: 10px 6px;">Core Black</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">2,800</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">1,950</td>
+                <td style="padding: 10px 6px; text-align: right; color: var(--emerald); font-weight: 700; font-family: var(--font-mono);">850</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">1,200</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">600</td>
+                <td style="padding: 10px 6px; text-align: center;"><span style="background: rgba(16,185,129,0.2); color: var(--emerald); padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem;">BALANCED</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                <td style="padding: 10px 6px; font-weight: 700; color: #fff;">Line 09</td>
+                <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan);">45007882</td>
+                <td style="padding: 10px 6px;">Optic White</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">3,400</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">3,100</td>
+                <td style="padding: 10px 6px; text-align: right; color: var(--emerald); font-weight: 700; font-family: var(--font-mono);">300</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">0</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">0</td>
+                <td style="padding: 10px 6px; text-align: center;"><span style="background: rgba(16,185,129,0.2); color: var(--emerald); padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem;">CLOSING</span></td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.04); background: rgba(244,63,94,0.05);">
+                <td style="padding: 10px 6px; font-weight: 700; color: #fff;">Line 17</td>
+                <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan);">45008912</td>
+                <td style="padding: 10px 6px;">Black Heather</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">1,420</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">890</td>
+                <td style="padding: 10px 6px; text-align: right; font-weight: 700; color: var(--rose); font-family: var(--font-mono);">530</td>
+                <td style="padding: 10px 6px; text-align: right; color: var(--amber); font-family: var(--font-mono);">120</td>
+                <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono);">2,580</td>
+                <td style="padding: 10px 6px; text-align: center;"><span style="background: #ef4444; color: #fff; padding: 3px 8px; border-radius: 4px; font-weight: 700; font-size: 0.7rem;">CRITICAL</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Panel 3: Executive Summary Wallboard -->
+        <div id="tab-hk-summary" class="app-tab-panel" style="padding: 18px 16px;">
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px;">
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">ACTIVE SEWING LINES</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--cyan);">17 Lines</div>
+              <div style="font-size: 0.75rem; color: var(--emerald);"><i class="fa-solid fa-circle-check"></i> Fully Monitored</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">TOTAL SEWING FLOOR WIP</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: #fff;">18,450 pcs</div>
+              <div style="font-size: 0.75rem; color: var(--cyan);"><i class="fa-solid fa-arrows-spin"></i> Healthy Pacing Buffer</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">SUPERMARKET READY (BUFFER)</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--emerald);">12,890 pcs</div>
+              <div style="font-size: 0.75rem; color: var(--emerald);"><i class="fa-solid fa-box"></i> Staged in Bins</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">FEEDING ALERT LINES</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--rose);">5 Lines</div>
+              <div style="font-size: 0.75rem; color: var(--rose);"><i class="fa-solid fa-bell"></i> 2 Critical • 3 Hungry</div>
+            </div>
+          </div>
+          <div style="background: rgba(2,6,23,0.6); padding: 12px 16px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06); font-size: 0.8rem; color: var(--text-secondary); display: flex; justify-content: space-between; align-items: center;">
+            <span><i class="fa-solid fa-tv" style="color: var(--cyan);"></i> Plant Wallboard Mode: Auto-cycles across cutting queues and sewing floors every 15 seconds.</span>
+            <span style="font-family: var(--font-mono); color: var(--cyan); font-size: 0.75rem;">TELEMETRY LATENCY: SUB-SECOND</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="product-section">
+      <span class="section-label-tag">MEASURED OPERATIONAL IMPACT</span>
+      <h2 class="section-h2">Eliminating Line Starvation</h2>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <div class="roi-headline">Workload Reduction</div>
+          <div class="roi-metric-name">Starvation & Idle Stoppages</div>
+          <p class="roi-detail">Predictive deficit alerts gave cutting supervisors advance feeding notice, eliminating emergency line stops and idle operator waiting time.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <div class="roi-headline">Less Paperwork</div>
+          <div class="roi-metric-name">Automated Telemetry Stream</div>
+          <p class="roi-detail">Replaced manual floor headcounts and handwritten whiteboard tallies with continuous digital tracking directly from shopfloor terminals.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="roi-headline">Real-Time Sync</div>
+          <div class="roi-metric-name">Direct SQL Station Feeds</div>
+          <p class="roi-detail">Transactional station records aggregated live in memory, delivering instant floor visibility without system latency or query lag.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="roi-headline">Cross-Floor Alignment</div>
+          <div class="roi-metric-name">Unified Cutting & Sewing Rhythm</div>
+          <p class="roi-detail">United cutting managers and sewing line chiefs under a single shared operational rhythm, eliminating inter-departmental friction.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Takeaway -->
+    <section id="takeaway" class="product-section">
+      <div class="recruiter-banner">
+        <div class="recruiter-icon-badge"><i class="fa-solid fa-user-check"></i></div>
+        <div class="recruiter-takeaway-content">
+          <h4>Key Takeaway: My Operational Impact</h4>
+          <p>
+            I built Hunger Kanban to eliminate the costliest bottleneck on our apparel shopfloor: idle sewing lines waiting for cut fabric. Instead of relying on delayed daily reports, I tapped directly into the GPRO MES SQL database, architecting a real-time polling pipeline that computes line deficit levels dynamically. I engineered three specialized views for Cutting supervisors, Line chiefs, and Industrial Engineering managers. My system eradicated sewing line starvation, gave cutting rooms proactive feeding buffers, reduced supervisor workload, and significantly boosted overall factory throughput.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pager Navigation -->
+    <div class="app-pager-nav">
+      <a href="pse.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">← Previous Application</span>
+          <span class="app-name">PSE & CTQ</span>
+        </div>
+      </a>
+      <a href="cutting-supermarket.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">Next Application →</span>
+          <span class="app-name">Cutting Supermarket System</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Rajan Singh</strong> • Hunger Kanban Product Showcase</div>
+      <div>Sidney Apparels LLC / Kingsville Garments</div>
+    </div>
+  </footer>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>

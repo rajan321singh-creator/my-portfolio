@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cutting Supermarket System | Rack Allocation & WIP Inventory — Rajan Singh Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-group">
+        <div class="brand-logo-frame"><i class="fa-solid fa-microchip"></i></div>
+        <div class="brand-titles">
+          <h1>Rajan Singh <span class="nav-badge">PORTFOLIO</span></h1>
+          <p>Asst. Manager — Digitalization</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="../index.html#apps" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> All 15 Systems</a>
+        <a href="mailto:rajan321singh@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Rajan</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="product-topbar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" class="breadcrumb-link"><i class="fa-solid fa-house"></i> Portfolio</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="../index.html#apps" class="breadcrumb-link">Cutting & Inventory</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Cutting Supermarket</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-header">
+        <div class="product-title-group">
+          <div class="product-tagline">
+            <i class="fa-solid fa-boxes-stacked"></i> INTERMEDIATE WIP RACK & BIN MANAGEMENT
+          </div>
+          <h1 class="product-h1">Cutting Supermarket System</h1>
+          <p class="product-lead">
+            A comprehensive cut-piece buffer inventory and physical rack allocation platform. Bridges cutting output with sewing demand through barcode-driven rack binning, FIFO dispatching, and dynamic supermarket capacity tracking.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <span class="status-pill"><span class="pulse-dot"></span> Live in Plant Production</span>
+        </div>
+      </div>
+
+      <div class="product-meta-matrix">
+        <div class="meta-item">
+          <div class="meta-label">Primary Department</div>
+          <div class="meta-val"><i class="fa-solid fa-boxes-packing"></i> Cutting Floor & Supermarket</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">System Architecture</div>
+          <div class="meta-val cyan"><i class="fa-solid fa-network-wired"></i> Enterprise REST API</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target Users</div>
+          <div class="meta-val"><i class="fa-solid fa-users"></i> Supermarket Controllers, Line Feeders</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tech Stack</div>
+          <div class="meta-val emerald"><i class="fa-solid fa-code"></i> Node.js, Express, SQLite, HTTPS</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-nav-bar">
+    <div class="container">
+      <ul class="page-nav-links">
+        <li class="page-nav-item active"><a href="#problem">The Problem</a></li>
+        <li class="page-nav-item"><a href="#solution">Features & Tabs</a></li>
+        <li class="page-nav-item"><a href="#architecture">Architecture</a></li>
+        <li class="page-nav-item"><a href="#ui-showcase">Interactive UI</a></li>
+        <li class="page-nav-item"><a href="#impact">Business Impact</a></li>
+        <li class="page-nav-item"><a href="#takeaway">Key Takeaway</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Problem -->
+    <section id="problem" class="product-section">
+      <span class="section-label-tag">THE INTERMEDIATE WIP BLACK HOLE</span>
+      <h2 class="section-h2">Why the Supermarket System Was Built</h2>
+      <p class="section-lead">
+        Between cutting table output and sewing line feeding lies the "supermarket zone"—a massive temporary holding area with hundreds of racks storing cut garment bundles. Without digital allocation, cut parts were frequently misplaced, mixed up, or aged past delivery deadlines.
+      </p>
+
+      <div class="problem-solution-grid">
+        <div class="ps-card problem">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h3>Pre-Supermarket Problems</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-xmark"></i> <strong>Lost Cut Bundles:</strong> Cut components for sleeve, body, and collar sat on random racks with no coordinate mapping, taking hours to locate.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Non-FIFO Feeding:</strong> Older cut lots were buried under freshly cut bundles, leading to fabric shade variations and delivery delays.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Unplanned Rack Congestion:</strong> Supermarket racks overflowed without capacity visibility, causing cut panels to get crumpled on the floor.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Discrepancies Between Cut vs Input:</strong> No digital audit trail tracked the exact moment cut pieces were handed over to sewing line feeders.</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-dolly"></i></div>
+            <h3>The Digital Supermarket Solution</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-check"></i> <strong>Physical Rack & Bin Allocation:</strong> Every cut bundle is digitally scanned and assigned to a precise Zone, Rack, and Shelf position.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>FIFO Dispatch Workflow:</strong> System prompts line feeders to pick the oldest cut lot first, enforcing strict First-In, First-Out integrity.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Real-Time Rack Occupancy Map:</strong> Visual heatmaps indicating rack utilization, free shelf slots, and over-capacity warnings.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Stock Adjustment Audit Logs:</strong> Cryptographically logged inventory corrections when bundle quantities are modified or scrapped.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="solution" class="product-section">
+      <span class="section-label-tag">PLATFORM MODULES & PRODUCTION TABS</span>
+      <h2 class="section-h2">Supermarket Operations Suite (7 Core Pages)</h2>
+
+      <div class="feature-matrix-grid">
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-gauge"></i></div>
+            <span class="feature-number">01</span>
+          </div>
+          <h4>Executive Dashboard</h4>
+          <p>Real-time shopfloor wallboard displaying Total Active Bins, Occupied Bins Ratio, Total Bundles in Supermarket, and Total Pieces staged across physical racks.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-qrcode"></i></div>
+            <span class="feature-number">02</span>
+          </div>
+          <h4>Rack Allocation Terminal</h4>
+          <p>Cut bundle receiving interface. Scans bundle QR/barcode, validates against PO master, and assigns physical Rack ID and shelf slot with instant capacity check.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <span class="feature-number">03</span>
+          </div>
+          <h4>Sewing Line Dispatch</h4>
+          <p>Enforces FIFO bundle issuance. Verifies target sewing line, deducts supermarket WIP, records dispatch timestamp, and notifies line chiefs.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-cubes"></i></div>
+            <span class="feature-number">04</span>
+          </div>
+          <h4>Manage Racks & Topology</h4>
+          <p>Dynamic warehouse layout editor configuring rack counts (Racks 1 to 33), shelf levels, maximum piece thresholds, and maintenance status.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <span class="feature-number">05</span>
+          </div>
+          <h4>Search & Location Lookup</h4>
+          <p>Instant locator search across PO Number, Style, Color, or Bundle Tag, returning exact physical rack coordinates in milliseconds.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-sliders"></i></div>
+            <span class="feature-number">06</span>
+          </div>
+          <h4>Stock Adjustment & Scrap Log</h4>
+          <p>Strict reconciliation interface for re-sorting or damaged parts, tracking operator ID, reason code, and adjusting live inventory counts.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="product-section">
+      <span class="section-label-tag">TECHNICAL ARCHITECTURE</span>
+      <h2 class="section-h2">Supermarket Transaction Pipeline</h2>
+      <p class="section-lead">
+        Engineered with a high-performance REST API backend handling atomic inventory state transitions with complete transaction isolation.
+      </p>
+
+            <div class="arch-diagram-wrapper">
+        <div class="arch-header-bar">
+          <div class="arch-terminal-dots">
+            <span class="arch-dot dot-red"></span>
+            <span class="arch-dot dot-yellow"></span>
+            <span class="arch-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #38bdf8;">
+            <i class="fa-solid fa-diagram-project" style="margin-right: 6px;"></i> Cutting Supermarket End-to-End Operational & System Flowchart
+          </span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: var(--emerald); font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">ACTIVE SHOPFLOOR FLOW</span>
+        </div>
+
+        <div class="visual-arch-pipeline">
+          <!-- Stage 01 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 01</span>
+              <div class="arch-node-icon" style="color: #38bdf8;"><i class="fa-solid fa-qrcode"></i></div>
+            </div>
+            <div class="arch-node-title">Cut-Floor Scanners & Terminals</div>
+            <div class="arch-node-subtitle">Bundle Intake & Checkout</div>
+            <div class="arch-node-desc">Receives inspected cut bundles from cutting tables, validates QR codes, and dispatches feeding carts to sewing lines.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">High-Speed 2D Scanners</span><span class="arch-tech-pill">Touch Terminals</span><span class="arch-tech-pill">Instant Feedback</span>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 02</span>
+              <div class="arch-node-icon" style="color: #a78bfa;"><i class="fa-solid fa-filter-circle-check"></i></div>
+            </div>
+            <div class="arch-node-title">Barcode Validation & Duplicate Guard</div>
+            <div class="arch-node-subtitle">Intake Gateway</div>
+            <div class="arch-node-desc">Ensures every bundle QR code is authentic, guards against duplicate check-in, and enforces strict FIFO dispatch order.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Duplicate Guard</span><span class="arch-tech-pill">Payload Verification</span><span class="arch-tech-pill">Edge Ingestion</span>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 03</span>
+              <div class="arch-node-icon" style="color: #f59e0b;"><i class="fa-solid fa-boxes-stacked"></i></div>
+            </div>
+            <div class="arch-node-title">Dynamic Rack & Bin Allocation</div>
+            <div class="arch-node-subtitle">Supermarket Engine</div>
+            <div class="arch-node-desc">Allocates warehouse rack, row, and bin locations based on style, colorway, and planned line feeding sequence.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Dynamic Bin Matrix</span><span class="arch-tech-pill">FIFO Dispatch Logic</span><span class="arch-tech-pill">Line Requisition</span>
+            </div>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 04</span>
+              <div class="arch-node-icon" style="color: #10b981;"><i class="fa-solid fa-cubes-stacked"></i></div>
+            </div>
+            <div class="arch-node-title">Real-Time Supermarket WIP Ledger</div>
+            <div class="arch-node-subtitle">Inventory Management</div>
+            <div class="arch-node-desc">Maintains accurate inventory balances across all storage racks, generating real-time feeding manifests for sewing lines.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Relational Inventory DB</span><span class="arch-tech-pill">Live Rack Monitor</span><span class="arch-tech-pill">Discrepancy Alarms</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-flow-summary-bar">
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-bolt"></i> <span><strong>Processing:</strong> Instant barcode validation & shelf mapping</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-shield-halved"></i> <span><strong>Security:</strong> Prevents duplicate bundle entry & lost cuts</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-chart-line"></i> <span><strong>Business Value:</strong> Strict FIFO inventory & paperless sewing line dispatch</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI Showcase -->
+    <section id="ui-showcase" class="product-section">
+      <span class="section-label-tag">ACTUAL APPLICATION INTERFACE</span>
+      <h2 class="section-h2">Supermarket Inventory Dashboard & Rack Grid</h2>
+
+      <div class="ui-mockup-frame">
+        <!-- Real Top Navigation Bar -->
+        <div class="ui-mockup-bar" style="background: #091024; border-bottom: 1px solid rgba(56,189,248,0.2); padding: 10px 16px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-boxes-stacked" style="color: var(--cyan);"></i>
+            <span style="font-weight: 700; color: #fff; letter-spacing: 0.04em;">SUPERMARKET INVENTORY</span>
+            <span style="font-size: 0.72rem; background: rgba(56,189,248,0.15); color: var(--cyan); padding: 2px 8px; border-radius: 4px;">Supermarket Core</span>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">
+            <i class="fa-solid fa-circle" style="color: var(--emerald); font-size: 0.55rem;"></i> Active Zone: Rack 1–33 • FIFO Mode: Strict
+          </div>
+        </div>
+
+        <!-- Interactive Tab Bar -->
+        <div class="app-tab-bar">
+          <button class="app-tab-btn active" data-tab-target="tab-sm-dash"><i class="fa-solid fa-gauge"></i> Supermarket Dashboard</button>
+          <button class="app-tab-btn" data-tab-target="tab-sm-allocate"><i class="fa-solid fa-qrcode"></i> Allocate Bundles</button>
+          <button class="app-tab-btn" data-tab-target="tab-sm-dispatch"><i class="fa-solid fa-truck-ramp-box"></i> Dispatch to Sewing</button>
+          <button class="app-tab-btn" data-tab-target="tab-sm-racks"><i class="fa-solid fa-cubes"></i> Rack & Shelf Manager</button>
+        </div>
+
+        <!-- Tab 1: Dashboard & Rack Grid -->
+        <div id="tab-sm-dash" class="app-tab-panel active">
+          <!-- Real Scorecards -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 18px 16px 14px 16px;">
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">TOTAL ACTIVE BINS</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--cyan);">396</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted);">Across 33 Heavy Racks</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">OCCUPIED BINS</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--amber);">294 <span style="font-size: 0.85rem; color: var(--text-muted); font-weight: 400;">Bins</span></div>
+              <div style="font-size: 0.75rem; color: var(--emerald);"><i class="fa-solid fa-circle-check"></i> Balanced Capacity</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">BUNDLES IN SUPERMARKET</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--cyan);">1,840</div>
+              <div style="font-size: 0.75rem; color: var(--cyan);">Ready for Dispatch</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); padding: 14px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+              <div style="font-size: 0.72rem; color: var(--text-muted); font-weight: 600;">TOTAL PCS IN SUPERMARKET</div>
+              <div style="font-size: 1.6rem; font-weight: 700; color: var(--emerald);">48,250</div>
+              <div style="font-size: 0.75rem; color: var(--emerald);"><i class="fa-solid fa-clock"></i> Factory Buffer</div>
+            </div>
+          </div>
+
+          <!-- Real Rack Grid Simulator -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 0 16px 16px 16px;">
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); padding: 12px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
+                <span>RACK 01 • BIN L1-B2</span>
+                <span style="color: var(--emerald);">OCCUPIED</span>
+              </div>
+              <div style="font-size: 0.76rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
+                PO: 45009104 • Crew Neck<br>
+                <span style="color: var(--text-muted);">Color: Collegiate Navy • 420 Pcs</span>
+              </div>
+            </div>
+
+            <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.3); padding: 12px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
+                <span>RACK 04 • BIN L2-B1</span>
+                <span style="color: var(--amber);">EXPIRING SOON</span>
+              </div>
+              <div style="font-size: 0.76rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
+                PO: 45008912 • Fleece Hoodie<br>
+                <span style="color: var(--amber);">FIFO Due: Age 48 hrs • 310 Pcs</span>
+              </div>
+            </div>
+
+            <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.3); padding: 12px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
+                <span>RACK 12 • BIN L1-B4</span>
+                <span style="color: var(--cyan);">AVAILABLE</span>
+              </div>
+              <div style="font-size: 0.76rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
+                Empty & Inspected<br>
+                <span style="color: var(--cyan);">Ready for Next Bundle Scan</span>
+              </div>
+            </div>
+
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.3); padding: 12px; border-radius: 8px;">
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700;">
+                <span>RACK 22 • BIN L3-B2</span>
+                <span style="color: var(--emerald);">OCCUPIED</span>
+              </div>
+              <div style="font-size: 0.76rem; color: var(--text-secondary); margin-top: 6px; line-height: 1.5;">
+                PO: 45007882 • Polo Pique<br>
+                <span style="color: var(--text-muted);">Color: Optic White • 600 Pcs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Allocate Bundles -->
+        <div id="tab-sm-allocate" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.7); padding: 18px; border-radius: 8px; border: 1px solid rgba(56,189,248,0.2);">
+            <div style="font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 12px;">
+              <i class="fa-solid fa-barcode" style="color: var(--cyan); margin-right: 6px;"></i> Scan Inbound Cut Bundle
+            </div>
+            <div style="display: grid; grid-template-columns: 2fr 1fr 1fr auto; gap: 12px; margin-bottom: 16px;">
+              <input type="text" placeholder="Scan Bundle QR / Barcode (e.g. BND-45009104-012)" value="BND-45009104-012" readonly style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: #fff; padding: 8px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 0.8rem;">
+              <input type="text" value="Rack 12 • Bin L1-B4" readonly style="background: rgba(255,255,255,0.05); border: 1px solid rgba(56,189,248,0.3); color: var(--cyan); padding: 8px 12px; border-radius: 4px; font-weight: 700; font-size: 0.8rem;">
+              <input type="text" value="Qty: 50 Pcs (Size M)" readonly style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.15); color: var(--text-secondary); padding: 8px 12px; border-radius: 4px; font-size: 0.8rem;">
+              <button class="btn btn-primary" style="font-size: 0.78rem; padding: 8px 16px; pointer-events: none;"><i class="fa-solid fa-check"></i> Assign to Bin</button>
+            </div>
+            <div style="font-size: 0.78rem; color: var(--emerald); display: flex; align-items: center; gap: 6px;">
+              <i class="fa-solid fa-circle-check"></i> Coordinate Lock: Target Shelf Rack 12, Bin L1-B4 auto-verified via coordinate matrix.
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Dispatch to Sewing -->
+        <div id="tab-sm-dispatch" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.7); padding: 18px; border-radius: 8px; border: 1px solid rgba(56,189,248,0.2);">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <div style="font-size: 0.85rem; font-weight: 700; color: #fff;">
+                <i class="fa-solid fa-truck-ramp-box" style="color: var(--amber); margin-right: 6px;"></i> Active Line Feeding Queue (FIFO Pick Order)
+              </div>
+              <span style="font-size: 0.72rem; background: rgba(245,158,11,0.15); color: var(--amber); padding: 3px 8px; border-radius: 4px; font-weight: 700;">STRICT FIFO ENFORCED</span>
+            </div>
+            <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+              <thead>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                  <th style="padding: 6px;">FIFO Priority</th>
+                  <th style="padding: 6px;">Rack & Bin Location</th>
+                  <th style="padding: 6px;">Target Sewing Line</th>
+                  <th style="padding: 6px;">PO Number</th>
+                  <th style="padding: 6px;">Color / Style</th>
+                  <th style="padding: 6px; text-align: right;">Quantity</th>
+                  <th style="padding: 6px; text-align: center;">Action</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-secondary);">
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 6px; color: var(--rose); font-weight: 700;">#1 (Age 48h)</td>
+                  <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">RACK 04 • L2-B1</td>
+                  <td style="padding: 8px 6px; font-weight: 600; color: #fff;">Line 17 (Hungry)</td>
+                  <td style="padding: 8px 6px; font-family: var(--font-mono);">45008912</td>
+                  <td style="padding: 8px 6px;">Black Heather Fleece</td>
+                  <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">310 pcs</td>
+                  <td style="padding: 8px 6px; text-align: center;"><span style="background: var(--cyan); color: #020617; font-weight: 700; padding: 3px 8px; border-radius: 4px; font-size: 0.7rem;">DISPATCH NOW</span></td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 6px; color: var(--amber); font-weight: 700;">#2 (Age 24h)</td>
+                  <td style="padding: 8px 6px; font-family: var(--font-mono); color: var(--cyan);">RACK 01 • L1-B2</td>
+                  <td style="padding: 8px 6px; font-weight: 600; color: #fff;">Line 04</td>
+                  <td style="padding: 8px 6px; font-family: var(--font-mono);">45009104</td>
+                  <td style="padding: 8px 6px;">Collegiate Navy</td>
+                  <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">420 pcs</td>
+                  <td style="padding: 8px 6px; text-align: center;"><span style="background: rgba(255,255,255,0.1); color: #fff; padding: 3px 8px; border-radius: 4px; font-size: 0.7rem;">STAGED</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 4: Manage Racks -->
+        <div id="tab-sm-racks" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.7); padding: 18px; border-radius: 8px; border: 1px solid rgba(56,189,248,0.2);">
+            <div style="font-size: 0.85rem; font-weight: 700; color: #fff; margin-bottom: 12px;">
+              <i class="fa-solid fa-cubes" style="color: var(--emerald); margin-right: 6px;"></i> Physical Rack Master (Racks 01 to 33)
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+              <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.08);">
+                <div style="font-weight: 700; color: #fff; font-size: 0.8rem;">ZONE A (Racks 01–11)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">132 Bins • Heavy Fleece & Knits</div>
+                <div style="font-size: 0.75rem; color: var(--emerald); margin-top: 6px;"><i class="fa-solid fa-circle-check"></i> Balanced Occupancy</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.08);">
+                <div style="font-weight: 700; color: #fff; font-size: 0.8rem;">ZONE B (Racks 12–22)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">132 Bins • Jersey & Interlock</div>
+                <div style="font-size: 0.75rem; color: var(--cyan); margin-top: 6px;"><i class="fa-solid fa-circle-check"></i> Ample Capacity</div>
+              </div>
+              <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 6px; border: 1px solid rgba(255,255,255,0.08);">
+                <div style="font-weight: 700; color: #fff; font-size: 0.8rem;">ZONE C (Racks 23–33)</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">132 Bins • Rib & Trim Components</div>
+                <div style="font-size: 0.75rem; color: var(--emerald); margin-top: 6px;"><i class="fa-solid fa-circle-check"></i> Balanced Occupancy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="product-section">
+      <span class="section-label-tag">FACTORY FLOOR RESULTS</span>
+      <h2 class="section-h2">Measurable Operational Impact</h2>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <div class="roi-headline">Workload Reduction</div>
+          <div class="roi-metric-name">Rapid Bundle Retrieval</div>
+          <p class="roi-detail">Line feeders locate and pick required bundles in seconds instead of conducting long, exhausting physical rack searches.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <div class="roi-headline">Less Paperwork</div>
+          <div class="roi-metric-name">Barcode Shelf Tracking</div>
+          <p class="roi-detail">Replaced physical bin cards and manual tally clipboards with instant coordinate barcode scanning.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="roi-headline">FIFO Compliance</div>
+          <div class="roi-metric-name">Strict Chronological Dispatch</div>
+          <p class="roi-detail">Automated FIFO dispatch queues ensured cut bundles were fed in sequence, preventing lot obsolescence and aging.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-cubes"></i></div>
+          <div class="roi-headline">Space Optimization</div>
+          <div class="roi-metric-name">Balanced Rack Utilization</div>
+          <p class="roi-detail">Real-time bin occupancy monitoring balanced inventory across all 33 racks, eliminating floor clutter and aisle congestion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Takeaway -->
+    <section id="takeaway" class="product-section">
+      <div class="recruiter-banner">
+        <div class="recruiter-icon-badge"><i class="fa-solid fa-user-check"></i></div>
+        <div class="recruiter-takeaway-content">
+          <h4>Key Takeaway: My Inventory Engineering Impact</h4>
+          <p>
+            I developed the Cutting Supermarket System to resolve the intermediate WIP black hole between our cutting floor and sewing lines. I engineered the physical-to-digital coordinate mapping for 33 physical industrial racks and hundreds of bin locations, built barcode-driven bundle allocation and FIFO picking workflows, and implemented an ACID-compliant transaction backend. My system drastically cut bundle search and retrieval time, reduced floor worker workload, eradicated misplaced garment bundles, and gave factory planners real-time visibility into intermediate buffer stocks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pager Navigation -->
+    <div class="app-pager-nav">
+      <a href="hunger-kanban.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">← Previous Application</span>
+          <span class="app-name">Hunger Kanban</span>
+        </div>
+      </a>
+      <a href="cpi.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">Next Application →</span>
+          <span class="app-name">Cut Panel Inspection (CPI)</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Rajan Singh</strong> • Cutting Supermarket System Product Showcase</div>
+      <div>Sidney Apparels LLC / Kingsville Garments</div>
+    </div>
+  </footer>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unified PO Tracker | GPRO MES & ERP Split-View Middleware — Rajan Singh Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-group">
+        <div class="brand-logo-frame"><i class="fa-solid fa-microchip"></i></div>
+        <div class="brand-titles">
+          <h1>Rajan Singh <span class="nav-badge">PORTFOLIO</span></h1>
+          <p>Asst. Manager — Digitalization</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="../index.html#apps" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> All 15 Systems</a>
+        <a href="mailto:rajan321singh@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Rajan</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="product-topbar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" class="breadcrumb-link"><i class="fa-solid fa-house"></i> Portfolio</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="../index.html#apps" class="breadcrumb-link">Production & Planning</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Unified PO Tracker</span>
+      </nav>
+    </div>
+  </div>
+
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-header">
+        <div class="product-title-group">
+          <div class="product-tagline">
+            <i class="fa-solid fa-route"></i> ERP & MES INTEROPERABILITY MIDDLEWARE
+          </div>
+          <h1 class="product-h1">Unified PO Tracker: Full Lifecycle Order Visibility</h1>
+          <p class="product-lead">
+            An enterprise supply chain integration middleware connecting STAGE ERP and GPRO MES. Delivers a unified split-view dashboard tracking purchase orders across all 6 manufacturing stages: Cutting Output, Supermarket In, Sewing Input, Sewing Output, Metal Detection (MD), Packing, and Warehouse Shipping.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <span class="status-pill"><span class="pulse-dot"></span> Live on Factory Network</span>
+        </div>
+      </div>
+
+      <div class="product-meta-matrix">
+        <div class="meta-item">
+          <div class="meta-label">Primary Department</div>
+          <div class="meta-val"><i class="fa-solid fa-industry"></i> Production, Planning & Merchandising</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Integration Layer</div>
+          <div class="meta-val cyan"><i class="fa-solid fa-network-wired"></i> ERP & MES Integration Engine</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target Users</div>
+          <div class="meta-val"><i class="fa-solid fa-users"></i> Plant General Manager, Merchandisers, IE</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Tech Stack</div>
+          <div class="meta-val emerald"><i class="fa-solid fa-code"></i> Node.js, Express, MSSQL, ERP Feeds</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="page-nav-bar">
+    <div class="container">
+      <ul class="page-nav-links">
+        <li class="page-nav-item active"><a href="#problem">The Problem</a></li>
+        <li class="page-nav-item"><a href="#solution">Features & Tabs</a></li>
+        <li class="page-nav-item"><a href="#architecture">Architecture</a></li>
+        <li class="page-nav-item"><a href="#ui-showcase">Interactive UI</a></li>
+        <li class="page-nav-item"><a href="#impact">Business Impact</a></li>
+        <li class="page-nav-item"><a href="#takeaway">Key Takeaway</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Problem -->
+    <section id="problem" class="product-section">
+      <span class="section-label-tag">DISCONNECTED ENTERPRISE SYSTEMS</span>
+      <h2 class="section-h2">Why Unified PO Tracker Was Built</h2>
+      <p class="section-lead">
+        Apparel manufacturing runs on two separate technological worlds: the enterprise ERP (which manages buyer orders, bills of materials, and shipping dates) and the factory MES (which tracks shopfloor machine operations and sewing line bundles). Because these systems did not communicate, nobody knew where a buyer's order actually was.
+      </p>
+
+      <div class="problem-solution-grid">
+        <div class="ps-card problem">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h3>The Information Chasm</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-xmark"></i> <strong>Siloed ERP vs MES:</strong> ERP showed an order was "In Production" for 3 weeks, with zero visibility into whether pieces were at cutting, sewing, or finishing.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Endless Phone Calls:</strong> Merchandisers spent hours daily calling cutting supervisors, line chiefs, and finishing managers to locate specific POs.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>The Metal Detection Blindspot:</strong> Garments finished sewing but sat uncounted at Metal Detection (MD) before warehouse receipt.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Missed Export Vessels:</strong> Unnoticed bottlenecks in packing caused containers to miss port cutoff times, incurring massive airfreight costs.</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>The Unified PO Solution</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-check"></i> <strong>End-to-End Traceability:</strong> Tracks every PO through 6 distinct operations: Cutting (55), Input (75), Output (250), MD, Pack, Ship.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Split-Screen Verification:</strong> Direct side-by-side comparison between GPRO MES shopfloor scans and STAGE ERP warehouse records.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Interactive KPI Dashboard:</strong> Real-time high-level aggregate counters across active orders in the last 90 days.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Natural Language Assistant:</strong> Integrated "Ask Assistant" widget enabling users to query order bottlenecks in plain English.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="solution" class="product-section">
+      <span class="section-label-tag">INTEGRATION ENGINE & FEATURES</span>
+      <h2 class="section-h2">Unified PO Tracker Modules & Views</h2>
+
+      <div class="feature-matrix-grid">
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-table-columns"></i></div>
+            <span class="feature-number">01</span>
+          </div>
+          <h4>GPRO & STAGE Split View</h4>
+          <p>Displays manufacturing execution telemetry (Cutting, Sewing Input & Output) alongside finishing & warehouse logistics in a unified side-by-side table.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <span class="feature-number">02</span>
+          </div>
+          <h4>Real-Time 6-Stage KPI Dashboard</h4>
+          <p>Macro view displaying Total POs, Planned Order Qty, Total Cut Pieces, Sewing Input/Output ratio, Metal Detection count, and Shipped FG.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
+            <span class="feature-number">03</span>
+          </div>
+          <h4>Smart Assistant Query Engine</h4>
+          <p>Allows merchandisers and plant managers to ask questions like "Which export POs have cut pieces waiting >3 days?" with instant answers.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-magnet"></i></div>
+            <span class="feature-number">04</span>
+          </div>
+          <h4>Metal Detection (MD) WIP Tracker</h4>
+          <p>Specifically tracks the critical bottleneck between garment sewing off-line and metal detection clearance, ensuring zero lost garments.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-filter"></i></div>
+            <span class="feature-number">05</span>
+          </div>
+          <h4>Multi-Tiered Filtering & Search</h4>
+          <p>Filter by Buyer/Brand, Style Number, PO Number, Color code, or Delivery Date window with instantaneous client-side reactivity.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon"><i class="fa-solid fa-file-excel"></i></div>
+            <span class="feature-number">06</span>
+          </div>
+          <h4>Complete Pipeline Excel Export</h4>
+          <p>1-click export of reconciled ERP/MES progress tables, saving hours of manual consolidation before buyer status meetings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="product-section">
+      <span class="section-label-tag">TECHNICAL ARCHITECTURE</span>
+      <h2 class="section-h2">Unified PO Middleware Architecture</h2>
+      <p class="section-lead">
+        Connects Microsoft SQL Server (GPRO MES) and STAGE ERP database endpoints into a high-speed normalized middleware cache.
+      </p>
+
+            <div class="arch-diagram-wrapper">
+        <div class="arch-header-bar">
+          <div class="arch-terminal-dots">
+            <span class="arch-dot dot-red"></span>
+            <span class="arch-dot dot-yellow"></span>
+            <span class="arch-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #38bdf8;">
+            <i class="fa-solid fa-diagram-project" style="margin-right: 6px;"></i> Unified PO Tracker End-to-End Operational & System Flowchart
+          </span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: var(--emerald); font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">ACTIVE SHOPFLOOR FLOW</span>
+        </div>
+
+        <div class="visual-arch-pipeline">
+          <!-- Stage 01 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 01</span>
+              <div class="arch-node-icon" style="color: #38bdf8;"><i class="fa-solid fa-desktop"></i></div>
+            </div>
+            <div class="arch-node-title">Merchandisers & Plant General Managers</div>
+            <div class="arch-node-subtitle">Executive Portal</div>
+            <div class="arch-node-desc">Merchandising and operations teams access unified purchase order tracking without opening separate ERP or MES systems.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Web Portal Client</span><span class="arch-tech-pill">Search & Filter Engine</span><span class="arch-tech-pill">Role-Based Views</span>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 02</span>
+              <div class="arch-node-icon" style="color: #a78bfa;"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+            </div>
+            <div class="arch-node-title">Dual ERP & MES Interop Bridge</div>
+            <div class="arch-node-subtitle">Integration Middleware</div>
+            <div class="arch-node-desc">Maintains concurrent, read-optimized database connections to STAGE ERP and GPRO MES database clusters.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Dual Connection Pool</span><span class="arch-tech-pill">STAGE ERP Bridge</span><span class="arch-tech-pill">GPRO MES Connector</span>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 03</span>
+              <div class="arch-node-icon" style="color: #f59e0b;"><i class="fa-solid fa-arrows-split-up-and-left"></i></div>
+            </div>
+            <div class="arch-node-title">6-Stage Manufacturing Pipeline Engine</div>
+            <div class="arch-node-subtitle">Lifecycle Logic</div>
+            <div class="arch-node-desc">Maps PO progress across Cutting Output, Supermarket In, Sewing Input, Sewing Output, Metal Detection, and Warehouse Shipping.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Split-View Mapper</span><span class="arch-tech-pill">Stage Bottleneck Alerts</span><span class="arch-tech-pill">Delivery Risk Logic</span>
+            </div>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 04</span>
+              <div class="arch-node-icon" style="color: #10b981;"><i class="fa-solid fa-comments"></i></div>
+            </div>
+            <div class="arch-node-title">Interactive Assistant & PO Split-View</div>
+            <div class="arch-node-subtitle">Decision Intelligence</div>
+            <div class="arch-node-desc">Provides side-by-side execution tables and query assistant answering queries on delayed POs and cut piece bottlenecks.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Smart Query Engine</span><span class="arch-tech-pill">Split-View UI</span><span class="arch-tech-pill">Automated Excel Export</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-flow-summary-bar">
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-bolt"></i> <span><strong>Processing:</strong> Simultaneous querying of STAGE ERP & GPRO MES</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-shield-halved"></i> <span><strong>Security:</strong> Read-only connection pooling protects enterprise databases</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-chart-line"></i> <span><strong>Business Value:</strong> Single pane of glass across all 6 manufacturing milestones</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UI Showcase -->
+    <section id="ui-showcase" class="product-section">
+      <span class="section-label-tag">ACTUAL APPLICATION INTERFACE</span>
+      <h2 class="section-h2">Unified PO Tracker - GPRO & STAGE Split View System</h2>
+
+      <div class="ui-mockup-frame">
+        <!-- Top App Bar -->
+        <div class="ui-mockup-bar" style="background: #091024; border-bottom: 1px solid rgba(56,189,248,0.2); padding: 10px 16px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-cubes" style="color: var(--cyan);"></i>
+            <span style="font-weight: 700; color: #fff; letter-spacing: 0.04em;">UNIFIED PO TRACKER - GPRO & STAGE SPLIT VIEW</span>
+            <span style="font-size: 0.72rem; background: rgba(56,189,248,0.15); color: var(--cyan); padding: 2px 8px; border-radius: 4px;">Unified Core</span>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--text-muted);">
+            <i class="fa-solid fa-circle" style="color: var(--emerald); font-size: 0.55rem;"></i> Dual ERP & MES Sync: Active
+          </div>
+        </div>
+
+        <!-- Interactive Tab Bar -->
+        <div class="app-tab-bar">
+          <button class="app-tab-btn active" data-tab-target="tab-po-stage"><i class="fa-solid fa-network-wired"></i> Unified ERP & MES View</button>
+          <button class="app-tab-btn" data-tab-target="tab-po-gpro"><i class="fa-solid fa-satellite-dish"></i> GPRO MES Shopfloor Live</button>
+          <button class="app-tab-btn" data-tab-target="tab-po-ai"><i class="fa-solid fa-robot"></i> Ask Assistant (AI Search)</button>
+        </div>
+
+        <!-- Tab 1: Unified ERP & MES View -->
+        <div id="tab-po-stage" class="app-tab-panel active">
+          <!-- 6 KPI Cards -->
+          <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; padding: 14px 16px; background: rgba(15,23,42,0.9); border-bottom: 1px solid rgba(255,255,255,0.06);">
+            <div style="background: rgba(2,132,199,0.1); border: 1px solid rgba(2,132,199,0.3); padding: 10px; border-radius: 6px; text-align: center;">
+              <div style="font-size: 0.68rem; color: var(--text-muted);">ORDER QTY</div>
+              <div style="font-size: 1.15rem; font-weight: 700; color: #38bdf8;">894,200</div>
+            </div>
+            <div style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); padding: 10px; border-radius: 6px; text-align: center;">
+              <div style="font-size: 0.68rem; color: var(--text-muted);">CUTTING OUTPUT</div>
+              <div style="font-size: 1.15rem; font-weight: 700; color: #06b6d4;">762,400</div>
+            </div>
+            <div style="background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.3); padding: 10px; border-radius: 6px; text-align: center;">
+              <div style="font-size: 0.68rem; color: var(--text-muted);">SEWING INPUT</div>
+              <div style="font-size: 1.15rem; font-weight: 700; color: #8b5cf6;">684,100</div>
+            </div>
+            <div style="background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); padding: 10px; border-radius: 6px; text-align: center;">
+              <div style="font-size: 0.68rem; color: var(--text-muted);">SEWING OUTPUT</div>
+              <div style="font-size: 1.15rem; font-weight: 700; color: #f59e0b;">612,900</div>
+            </div>
+            <div style="background: rgba(234,179,8,0.1); border: 1px solid rgba(234,179,8,0.3); padding: 10px; border-radius: 6px; text-align: center;">
+              <div style="font-size: 0.68rem; color: var(--text-muted);">METAL DETECT (MD)</div>
+              <div style="font-size: 1.15rem; font-weight: 700; color: #eab308;">598,400</div>
+            </div>
+            <div style="background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3); padding: 10px; border-radius: 6px; text-align: center;">
+              <div style="font-size: 0.68rem; color: var(--text-muted);">SHIPPED FG</div>
+              <div style="font-size: 1.15rem; font-weight: 700; color: #10b981;">542,000</div>
+            </div>
+          </div>
+
+          <!-- Real Progression Table -->
+          <div style="padding: 14px 16px; overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.78rem; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                  <th style="padding: 8px 6px;">PO Number</th>
+                  <th style="padding: 8px 6px;">Buyer</th>
+                  <th style="padding: 8px 6px;">Style</th>
+                  <th style="padding: 8px 6px;">Stage Progression (Cut -> Sew In -> Out -> MD -> Ship)</th>
+                  <th style="padding: 8px 6px; text-align: right;">Balance</th>
+                  <th style="padding: 8px 6px; text-align: center;">Bottleneck</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-secondary);">
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan); font-weight: 700;">4200686870</td>
+                  <td style="padding: 10px 6px; font-weight: 600; color: #fff;">BRAND GLOBAL A</td>
+                  <td style="padding: 10px 6px;">KS-3246</td>
+                  <td style="padding: 10px 6px; font-family: var(--font-mono);">
+                    5,000 Cut [✓] • 5,000 In [✓] • 4,800 Out • 4,200 MD • 0 Ship
+                  </td>
+                  <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono); color: var(--amber);">800 Pcs</td>
+                  <td style="padding: 10px 6px; text-align: center;">
+                    <span style="background: rgba(245,158,11,0.15); color: var(--amber); padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600;">At MD Finishing</span>
+                  </td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 10px 6px; font-family: var(--font-mono); color: var(--cyan); font-weight: 700;">4200674614</td>
+                  <td style="padding: 10px 6px; font-weight: 600; color: #fff;">BRAND GLOBAL B</td>
+                  <td style="padding: 10px 6px;">SK-9821</td>
+                  <td style="padding: 10px 6px; font-family: var(--font-mono);">
+                    3,500 Cut [✓] • 2,100 In • 1,800 Out • 1,800 MD • 0 Ship
+                  </td>
+                  <td style="padding: 10px 6px; text-align: right; font-family: var(--font-mono); color: var(--rose);">1,700 Pcs</td>
+                  <td style="padding: 10px 6px; text-align: center;">
+                    <span style="background: rgba(244,63,94,0.15); color: var(--rose); padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600;">Sewing Feeding Delay</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: GPRO MES Shopfloor Live -->
+        <div id="tab-po-gpro" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.7); padding: 16px; border-radius: 8px; border: 1px solid rgba(56,189,248,0.2);">
+            <div style="font-size: 0.82rem; font-weight: 700; color: #fff; margin-bottom: 10px;">
+              <i class="fa-solid fa-satellite-dish" style="color: var(--cyan); margin-right: 6px;"></i> Live GPRO MES Station Scan Activity
+            </div>
+            <table style="width: 100%; font-size: 0.78rem; text-align: left; border-collapse: collapse;">
+              <thead>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                  <th style="padding: 6px;">Station Operation</th>
+                  <th style="padding: 6px;">Assigned Sewing Line</th>
+                  <th style="padding: 6px;">Active Bundle ID</th>
+                  <th style="padding: 6px; text-align: right;">Units Scanned</th>
+                  <th style="padding: 6px; text-align: center;">Sync State</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-secondary);">
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 6px; font-weight: 600; color: #fff;">Sewing Input (Feeding)</td>
+                  <td style="padding: 8px 6px; color: var(--cyan);">Sewing Line 04</td>
+                  <td style="padding: 8px 6px; font-family: var(--font-mono);">BND-4200686870-088</td>
+                  <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">50 pcs</td>
+                  <td style="padding: 8px 6px; text-align: center;"><span style="background: rgba(16,185,129,0.2); color: var(--emerald); padding: 2px 6px; border-radius: 3px; font-size: 0.7rem;">STREAMING</span></td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 6px; font-weight: 600; color: #fff;">Sewing Output (End QC)</td>
+                  <td style="padding: 8px 6px; color: var(--cyan);">Sewing Line 11</td>
+                  <td style="padding: 8px 6px; font-family: var(--font-mono);">BND-4200674614-042</td>
+                  <td style="padding: 8px 6px; text-align: right; font-family: var(--font-mono);">50 pcs</td>
+                  <td style="padding: 8px 6px; text-align: center;"><span style="background: rgba(16,185,129,0.2); color: var(--emerald); padding: 2px 6px; border-radius: 3px; font-size: 0.7rem;">STREAMING</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: AI Order Assistant -->
+        <div id="tab-po-ai" class="app-tab-panel" style="padding: 16px;">
+          <div style="background: rgba(2,6,23,0.7); padding: 18px; border-radius: 8px; border: 1px solid rgba(139,92,246,0.3);">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+              <i class="fa-solid fa-robot" style="color: #a78bfa; font-size: 1.1rem;"></i>
+              <span style="font-weight: 700; color: #fff; font-size: 0.85rem;">Natural Language Order Assistant</span>
+            </div>
+            <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 12px; margin-bottom: 12px;">
+              <div style="font-size: 0.75rem; color: #a78bfa; font-weight: 600; margin-bottom: 4px;">User Query:</div>
+              <div style="font-size: 0.82rem; color: #fff; font-family: var(--font-mono);">"Where is PO 4200686870 right now and what is delaying shipping?"</div>
+            </div>
+            <div style="background: rgba(139,92,246,0.08); border: 1px solid rgba(139,92,246,0.2); border-radius: 6px; padding: 12px;">
+              <div style="font-size: 0.75rem; color: var(--emerald); font-weight: 600; margin-bottom: 4px;"><i class="fa-solid fa-sparkles"></i> AI Assistant Synthesis:</div>
+              <div style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5;">
+                PO 4200686870 (KS-3246) is currently <strong>near completion in final finishing</strong>. Sewing operations and Metal Detection stages have been cleared. The final balance is currently staged at the finishing iron line. Expected packing handover shortly.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact -->
+    <section id="impact" class="product-section">
+      <span class="section-label-tag">SUPPLY CHAIN IMPACT</span>
+      <h2 class="section-h2">Streamlined Order Visibility & Workload Reduction</h2>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-arrow-trend-down"></i></div>
+          <div class="roi-headline">Workload Reduction</div>
+          <div class="roi-metric-name">Fewer Status Inquiries</div>
+          <p class="roi-detail">Merchandisers and planners query live order milestones directly, eliminating endless phone calls and floor chases.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <div class="roi-headline">Less Paperwork</div>
+          <div class="roi-metric-name">Unified Digital Pipeline</div>
+          <p class="roi-detail">Replaced disconnected paper tracking sheets and fragmented ERP exports with an integrated real-time dashboard.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <div class="roi-headline">Bottleneck Detection</div>
+          <div class="roi-metric-name">Zero Stagnant Batches</div>
+          <p class="roi-detail">Stage-by-stage progression tracking prevents garments from sitting uncounted between sewing, finishing, and shipping.</p>
+        </div>
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <div class="roi-headline">Cross-System Harmony</div>
+          <div class="roi-metric-name">Enterprise ERP & MES Sync</div>
+          <p class="roi-detail">Automated data normalization harmonized ERP purchase orders with shopfloor MES transactions in real time.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Takeaway -->
+    <section id="takeaway" class="product-section">
+      <div class="recruiter-banner">
+        <div class="recruiter-icon-badge"><i class="fa-solid fa-user-check"></i></div>
+        <div class="recruiter-takeaway-content">
+          <h4>Key Takeaway: My Systems Integration Impact</h4>
+          <p>
+            I architected the Unified PO Tracker to bridge the critical information chasm between our enterprise ERP and shopfloor GPRO MES. Previously, locating an order required dozens of daily phone calls across cutting, sewing, and packing floors. I developed high-performance reconciliation middleware that ingests transactional scans across 6 distinct manufacturing stages (Cutting, Sewing Input, Sewing Output, Metal Detection, Packing, and Final Shipping). I also integrated an AI-assisted query dialog and real-time KPI scorecards. My system drastically cut status inquiry calls, reduced planner and supervisor workload, and gave factory leadership complete, real-time order visibility across all manufacturing stages.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pager Navigation -->
+    <div class="app-pager-nav">
+      <a href="daily-report.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">← Previous Application</span>
+          <span class="app-name">Daily Report</span>
+        </div>
+      </a>
+      <a href="wh-stock.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">Next Application →</span>
+          <span class="app-name">WH Stock & Rack (MTN)</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Rajan Singh</strong> • Unified PO Tracker Product Showcase</div>
+      <div>Sidney Apparels LLC / Kingsville Garments</div>
+    </div>
+  </footer>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>
