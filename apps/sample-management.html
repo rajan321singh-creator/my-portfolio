@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garment Sample Management System | Merchandising & Sampling Workflow — Rajan Singh Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-group">
+        <div class="brand-logo-frame"><i class="fa-solid fa-microchip"></i></div>
+        <div class="brand-titles">
+          <h1>Rajan Singh <span class="nav-badge">PORTFOLIO</span></h1>
+          <p>Asst. Manager — Digitalization</p>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="../index.html#apps" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> All 17 Systems</a>
+        <a href="mailto:rajan321singh@gmail.com" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Contact Rajan</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="product-topbar">
+    <div class="container">
+      <nav class="breadcrumbs">
+        <a href="../index.html" class="breadcrumb-link"><i class="fa-solid fa-house"></i> Portfolio</a>
+        <span class="breadcrumb-sep">/</span>
+        <a href="../index.html#apps" class="breadcrumb-link">Product Development</a>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Sample Management System (SMS)</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Product Hero -->
+  <section class="product-hero">
+    <div class="container">
+      <div class="product-hero-header">
+        <div class="product-title-group">
+          <div class="product-tagline">
+            <i class="fa-solid fa-shirt"></i> ENTERPRISE SAMPLING WORKFLOW & NEXT-STEP LOCKING ENGINE
+          </div>
+          <h1 class="product-h1">Garment Sample Management System</h1>
+          <p class="product-lead">
+            An end-to-end product development and sampling control platform connecting Merchandising, Fabric Stores, CAD/Cutting, Sewing, and Quality Control. Features strict sequential next-step workflow locking, serialized piece QR tracking, 4-in-1 printable A4 job cards, camera-based warehouse rack binning, and a digital Cross-Functional Team (CFT) review portal.
+          </p>
+        </div>
+
+        <div class="hero-actions">
+          <span class="status-pill"><span class="pulse-dot"></span> Live in Sampling & Development</span>
+        </div>
+      </div>
+
+      <!-- Metadata Matrix -->
+      <div class="product-meta-matrix">
+        <div class="meta-item">
+          <div class="meta-label">Primary Department</div>
+          <div class="meta-val" style="color: #f43f5e;"><i class="fa-solid fa-compass-drafting"></i> Product Development & Merchandising</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Core Architecture</div>
+          <div class="meta-val cyan"><i class="fa-solid fa-lock"></i> Next-Step Locking & Serialized QR</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Target Users</div>
+          <div class="meta-val"><i class="fa-solid fa-users"></i> Merchandisers, Sample Masters, QA Chiefs, Dispatch Custodians</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-label">Database Engine</div>
+          <div class="meta-val emerald"><i class="fa-solid fa-database"></i> Microsoft SQL Server (pyodbc Pooling)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- In-Page Sticky Nav -->
+  <nav class="page-nav-bar">
+    <div class="container">
+      <ul class="page-nav-links">
+        <li class="page-nav-item active"><a href="#problem">The Problem</a></li>
+        <li class="page-nav-item"><a href="#solution">Solution & Features</a></li>
+        <li class="page-nav-item"><a href="#architecture">Architecture</a></li>
+        <li class="page-nav-item"><a href="#ui-showcase">Interactive UI</a></li>
+        <li class="page-nav-item"><a href="#impact">Business Impact</a></li>
+        <li class="page-nav-item"><a href="#takeaway">Key Takeaway</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Section 1: Problem & Solution -->
+    <section id="problem" class="product-section">
+      <span class="section-label-tag">DEVELOPMENT & MERCHANDISING FRICTION</span>
+      <h2 class="section-h2">Why the Sample Management System Was Built</h2>
+      <p class="section-lead">
+        In export garment manufacturing, buyer sample approval is the prerequisite gatekeeper for bulk production orders. Traditional sample rooms operate on fragmented paperwork, phone calls, and chaotic garment racks, causing missed buyer courier deadlines and production rejections.
+      </p>
+
+      <div class="problem-solution-grid">
+        <div class="ps-card problem">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <h3>Pre-System Sampling Bottlenecks</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-xmark"></i> <strong>Blind Tracking Across Departments:</strong> Merchandisers had to physically walk to the sample floor to find out if fabric arrived, if patterns were graded, or if sewing had started.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Process Skipping & Cut Corners:</strong> Sample tails were cut and sewn before fabric quality releases were signed, leading to wrong shades and rejected buyer fit sets.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Lost Approval & Gold Seal Samples:</strong> Hundreds of physical garments hung unmarked on crowded racks; finding a specific buyer reference sample required hours of manual searching.</li>
+            <li><i class="fa-solid fa-xmark"></i> <strong>Disputed Quality Defects:</strong> Cross-Functional Team (CFT) meetings lacked documented photographic evidence and structured rework loops, causing repetitive pattern mistakes in bulk production.</li>
+          </ul>
+        </div>
+
+        <div class="ps-card solution">
+          <div class="ps-card-header">
+            <div class="ps-icon"><i class="fa-solid fa-bolt"></i></div>
+            <h3>The Automated Digital Solution</h3>
+          </div>
+          <ul class="ps-list">
+            <li><i class="fa-solid fa-check"></i> <strong>Sequential Next-Step Locking:</strong> Enforces industrial discipline by mathematically preventing downstream operations (Sewing, CFT, Dispatch) until upstream approvals are complete.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Serialized QR & 4-in-1 Printable Cards:</strong> Automatically generates unique tracking QR codes per piece (<code style="font-size:0.75rem; color:var(--cyan);">REQ-STYLE-CLR-SZ-001</code>) and printable A4 traveler cards.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>Warehouse Rack QR Locator & Camera Scanner:</strong> Integrated mobile browser camera scanner locates garments by Section, Level, and Box in seconds with zero misplaced items.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>CFT Quality Audit & Rework Generation:</strong> Digital multi-stakeholder inspection portal capturing defect photos, pass/rework flags, and automatically issuing child rework QR tags.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Features & Tabs -->
+    <section id="solution" class="product-section">
+      <span class="section-label-tag">PLATFORM CAPABILITIES</span>
+      <h2 class="section-h2">Core Operational Modules (6 Integrated Suites)</h2>
+
+      <div class="feature-matrix-grid">
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: #f43f5e;"><i class="fa-solid fa-lock"></i></div>
+            <span class="feature-module-tag">WORKFLOW CONTROL</span>
+          </div>
+          <h4>Sequential Next-Step Locking</h4>
+          <p>Enforces strict process prerequisites across the sampling pipeline. Downstream tasks (Fabric Issuance → Pattern/CAD → Cutting → Embellishment → Sewing → CFT Review → Dispatch) are locked in the database until upstream milestones receive timestamped digital sign-offs.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: #38bdf8;"><i class="fa-solid fa-qrcode"></i></div>
+            <span class="feature-module-tag">SERIALIZED TRACKING</span>
+          </div>
+          <h4>Serialized QR Codes & 4-in-1 Traveler Cards</h4>
+          <p>Every individual sample piece receives a unique cryptographic QR identifier. Generates printable 4-in-1 A4 traveler cards containing tech pack sketches, swatch swatches, component measurements, and traveler barcodes that follow the garment across all workbenches.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: #10b981;"><i class="fa-solid fa-scroll"></i></div>
+            <span class="feature-module-tag">MATERIAL INTEGRATION</span>
+          </div>
+          <h4>ERP Fabric Ledger & Roll Takka Sync</h4>
+          <p>Direct synchronization with factory fabric warehouse stock. Tracks raw material by mill roll takka barcode, shade band, lot number, GSM, and width. Validates QC inspection release flags before fabric can be issued to cutting tables.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: #f59e0b;"><i class="fa-solid fa-warehouse"></i></div>
+            <span class="feature-module-tag">INVENTORY REPOSITORY</span>
+          </div>
+          <h4>Rack Locator & Camera Barcode Scanner</h4>
+          <p>Physical sample room digital twin organized by Section, Level, and Box. Built-in HTML5 camera scanner allows storekeepers to scan garment QR codes and immediately assign them to specific bin locations, cutting retrieval time from hours to seconds.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: #a855f7;"><i class="fa-solid fa-clipboard-check"></i></div>
+            <span class="feature-module-tag">QUALITY ASSURANCE</span>
+          </div>
+          <h4>CFT Review Portal & Rework Child QRs</h4>
+          <p>Structured Cross-Functional Team inspection portal uniting Merchandisers, Quality Heads, and Production Chiefs. Records pass/rework/reject determinations, attaches photographic defect evidence, and automatically spawns linked child QRs for pattern alterations.</p>
+        </div>
+
+        <div class="feature-box">
+          <div class="feature-icon-bar">
+            <div class="feature-icon" style="color: #34d399;"><i class="fa-solid fa-truck-fast"></i></div>
+            <span class="feature-module-tag">BUYER DISPATCH</span>
+          </div>
+          <h4>Courier Dispatch & Reference Library</h4>
+          <p>Manages international courier airway bills (DHL, FedEx, Aramex), buyer submission packages, and gate pass logs. Houses a dedicated Reference Sample Room library with historical gold seals and physical check-out/borrow logs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Technical Architecture -->
+    <section id="architecture" class="product-section">
+      <span class="section-label-tag">TECHNICAL ARCHITECTURE</span>
+      <h2 class="section-h2">Sample Management System Architecture</h2>
+      <p class="section-lead">
+        Engineered with a high-throughput Python FastAPI backend, Microsoft SQL Server relational storage with pyodbc connection pooling, and responsive camera-driven QR scanning.
+      </p>
+
+      <div class="arch-diagram-wrapper">
+        <div class="arch-header-bar">
+          <div class="arch-terminal-dots">
+            <span class="arch-dot dot-red"></span>
+            <span class="arch-dot dot-yellow"></span>
+            <span class="arch-dot dot-green"></span>
+          </div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: #f43f5e;">
+            <i class="fa-solid fa-diagram-project" style="margin-right: 6px;"></i> Garment Sampling & Development Pipeline
+          </span>
+          <span style="background: rgba(16, 185, 129, 0.15); color: var(--emerald); font-size: 0.72rem; padding: 2px 8px; border-radius: 4px; font-weight: 600;">ACTIVE SHOPFLOOR FLOW</span>
+        </div>
+
+        <div class="visual-arch-pipeline">
+          <!-- Stage 01 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 01</span>
+              <div class="arch-node-icon" style="color: #f43f5e;"><i class="fa-solid fa-file-circle-plus"></i></div>
+            </div>
+            <div class="arch-node-title">Requisition & Fabric Inward</div>
+            <div class="arch-node-subtitle">Intake & Material Binding</div>
+            <div class="arch-node-desc">Merchandiser captures buyer sample specs (Proto, Fit, SMS, PP), uploads tech packs, and links ERP fabric roll takkas with verified QC shade releases.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">Tech Pack Intake</span>
+              <span class="arch-tech-pill">ERP Fabric Sync</span>
+              <span class="arch-tech-pill">Takka QC Check</span>
+            </div>
+          </div>
+
+          <!-- Stage 02 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 02</span>
+              <div class="arch-node-icon" style="color: #a78bfa;"><i class="fa-solid fa-lock"></i></div>
+            </div>
+            <div class="arch-node-title">Next-Step Locking Relational Core</div>
+            <div class="arch-node-subtitle">Workflow Gatekeeper</div>
+            <div class="arch-node-desc">FastAPI microservice executing on MSSQL with pyodbc connection pooling. Validates database locks to block downstream processing until upstream steps pass.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">FastAPI Async</span>
+              <span class="arch-tech-pill">MSSQL sampleM</span>
+              <span class="arch-tech-pill">Sequential Locks</span>
+            </div>
+          </div>
+
+          <!-- Stage 03 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 03</span>
+              <div class="arch-node-icon" style="color: #38bdf8;"><i class="fa-solid fa-qrcode"></i></div>
+            </div>
+            <div class="arch-node-title">Floor Telemetry & 4-in-1 Cards</div>
+            <div class="arch-node-subtitle">Physical Execution & QR Cards</div>
+            <div class="arch-node-desc">Generates printable A4 4-in-1 job traveler cards with serialized QRs. Floor terminals track pattern grading, cutting, embellishment, and sewing milestones.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">4-in-1 A4 Print</span>
+              <span class="arch-tech-pill">Serialized QR</span>
+              <span class="arch-tech-pill">Floor Timestamps</span>
+            </div>
+          </div>
+
+          <!-- Stage 04 -->
+          <div class="arch-flow-node">
+            <div class="arch-node-header">
+              <span class="arch-step-badge">Stage 04</span>
+              <div class="arch-node-icon" style="color: #10b981;"><i class="fa-solid fa-boxes-stacked"></i></div>
+            </div>
+            <div class="arch-node-title">CFT Audit, Rack Binning & Dispatch</div>
+            <div class="arch-node-subtitle">Quality Sign-Off & Delivery</div>
+            <div class="arch-node-desc">Cross-functional team inspection with defect photo attachments, camera QR rack binning (Sec-Lvl-Box), courier AWB tracking, and complete audit logging.</div>
+            <div class="arch-node-tech-tags">
+              <span class="arch-tech-pill">CFT Photo Audit</span>
+              <span class="arch-tech-pill">HTML5 QR Scan</span>
+              <span class="arch-tech-pill">Courier Dispatch</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-flow-summary-bar">
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-bolt"></i> <span><strong>Processing:</strong> Instant serialized QR generation and sub-second rack location queries</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-shield-halved"></i> <span><strong>Governance:</strong> 12 granular tab privilege levels & tamper-evident audit trail</span>
+          </div>
+          <div class="arch-flow-summary-item">
+            <i class="fa-solid fa-chart-line"></i> <span><strong>Operational Value:</strong> Completely eliminates lost approval samples and unapproved bulk cutting</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="arch-tech-grid">
+        <div class="arch-tech-item">
+          <h5><i class="fa-brands fa-python" style="color: #38bdf8;"></i> FastAPI & pyodbc Connection Pooling</h5>
+          <p>High-performance asynchronous Python architecture running behind Nginx. Utilizes persistent pyodbc connection pooling to handle concurrent multi-user transactions across Merchandising and Production.</p>
+        </div>
+        <div class="arch-tech-item">
+          <h5><i class="fa-solid fa-database" style="color: #a78bfa;"></i> Microsoft SQL Server Relational Core</h5>
+          <p>Enterprise database schema enforcing strict foreign-key cascades, unique serialized QR indexes, and comprehensive audit logs across 17 relational tables with zero orphaned records.</p>
+        </div>
+        <div class="arch-tech-item">
+          <h5><i class="fa-solid fa-camera" style="color: #10b981;"></i> Offline HTML5 QR Scanner & Print Engine</h5>
+          <p>Zero-dependency camera QR/barcode scanner built directly into the web UI for mobile and tablet workstations. Pairs with CSS paged-media layouts for millimeter-accurate 4-in-1 A4 card printing.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: UI Showcase -->
+    <section id="ui-showcase" class="product-section">
+      <span class="section-label-tag">ACTUAL APPLICATION INTERFACE</span>
+      <h2 class="section-h2">Sample Management System Live Workstation</h2>
+
+      <div class="ui-mockup-frame">
+        <!-- Top App Bar -->
+        <div class="ui-mockup-bar" style="background: #091024; border-bottom: 1px solid rgba(244,63,94,0.25); padding: 10px 16px;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fa-solid fa-shirt" style="color: #f43f5e;"></i>
+            <span style="font-weight: 700; color: #fff; letter-spacing: 0.04em;">SAMPLE MANAGEMENT SYSTEM</span>
+            <span style="font-size: 0.72rem; background: rgba(244,63,94,0.15); color: #f43f5e; padding: 2px 8px; border-radius: 4px;">Enterprise Workflow</span>
+          </div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); display: flex; align-items: center; gap: 14px;">
+            <span><i class="fa-solid fa-circle" style="color: var(--emerald); font-size: 0.55rem;"></i> Active Buyer: <strong>Tommy Hilfiger (TH)</strong></span>
+            <span><i class="fa-solid fa-network-wired" style="color: var(--cyan);"></i> Plant Network: <strong>Sample Development Server</strong></span>
+          </div>
+        </div>
+
+        <!-- Interactive Tab Bar -->
+        <div class="app-tab-bar">
+          <button class="app-tab-btn active" data-tab-target="tab-sms-req"><i class="fa-solid fa-file-circle-plus"></i> Requests & 4-in-1 Cards</button>
+          <button class="app-tab-btn" data-tab-target="tab-sms-prod"><i class="fa-solid fa-lock"></i> Production & Next-Step Lock</button>
+          <button class="app-tab-btn" data-tab-target="tab-sms-cft"><i class="fa-solid fa-clipboard-check"></i> Quality / CFT Review</button>
+          <button class="app-tab-btn" data-tab-target="tab-sms-rack"><i class="fa-solid fa-warehouse"></i> Rack Binning & QR Locator</button>
+        </div>
+
+        <!-- Tab 1: Requests & 4-in-1 Cards -->
+        <div id="tab-sms-req" class="app-tab-panel active" style="padding: 16px;">
+          <!-- Top KPI Ribbon -->
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 14px;">
+            <div style="background: rgba(244, 63, 94, 0.08); border: 1px solid rgba(244, 63, 94, 0.25); padding: 12px 14px; border-radius: 8px;">
+              <div style="font-size: 0.7rem; color: #f43f5e; font-weight: 700;">ACTIVE REQUISITIONS</div>
+              <div style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 4px;">42 Styles</div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Spring/Summer 2026 Collection</div>
+            </div>
+            <div style="background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); padding: 12px 14px; border-radius: 8px;">
+              <div style="font-size: 0.7rem; color: var(--cyan); font-weight: 700;">SERIALIZED PIECES</div>
+              <div style="font-size: 1.3rem; font-weight: 800; color: #fff; margin-top: 4px;">128 Garments</div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Individual QR traveler cards active</div>
+            </div>
+            <div style="background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.25); padding: 12px 14px; border-radius: 8px;">
+              <div style="font-size: 0.7rem; color: var(--amber); font-weight: 700;">ON-TIME SUBMISSION</div>
+              <div style="font-size: 1.3rem; font-weight: 800; color: var(--amber); margin-top: 4px;">High OTIF</div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Zero overdue buyer couriers</div>
+            </div>
+            <div style="background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.25); padding: 12px 14px; border-radius: 8px;">
+              <div style="font-size: 0.7rem; color: var(--emerald); font-weight: 700;">CFT PASS RATE</div>
+              <div style="font-size: 1.3rem; font-weight: 800; color: var(--emerald); margin-top: 4px;">First-Pass Fit</div>
+              <div style="font-size: 0.72rem; color: var(--text-muted);">Standardized cross-team reviews</div>
+            </div>
+          </div>
+
+          <!-- Printable 4-in-1 Card Visual Preview -->
+          <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(244,63,94,0.3); border-radius: 8px; padding: 14px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 10px; margin-bottom: 12px;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-print" style="color: #f43f5e;"></i> 4-in-1 A4 Traveler Card Preview (Piece 01 of 02)
+              </span>
+              <span style="font-size: 0.72rem; background: rgba(56,189,248,0.15); color: var(--cyan); padding: 3px 8px; border-radius: 4px; font-weight: 600;">
+                CARD SERIAL: REQ-TH-F25-0012-P01
+              </span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 80px 1fr 140px; gap: 16px; align-items: center; background: rgba(255,255,255,0.02); padding: 12px; border-radius: 6px;">
+              <div style="width: 80px; height: 80px; background: #fff; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #020617; font-size: 2.5rem;">
+                <i class="fa-solid fa-qrcode"></i>
+              </div>
+              <div style="font-size: 0.76rem; color: var(--text-secondary); line-height: 1.6;">
+                <div style="color: #fff; font-weight: 700; font-size: 0.95rem; margin-bottom: 2px;">
+                  Tommy Hilfiger • Classic Crew Neck Knit (Style: TH-88412)
+                </div>
+                <div>Buyer: <strong>Tommy Hilfiger (TH)</strong> • Type: <span style="color: #f43f5e; font-weight: 700;">Proto Sample</span> • Season: <strong>Summer 2026</strong></div>
+                <div>Color: <strong>Desert Sand / Navy</strong> • Size: <strong>M</strong> • Article: <strong>Jersey Knit Cotton (180 GSM)</strong></div>
+                <div>Fabric Lot: <span style="font-family: var(--font-mono); color: var(--cyan);">TAKKA-8841-A (Shade A - Released)</span> • Embellishment: <strong>Chest Embroidery</strong></div>
+              </div>
+              <div style="text-align: right; border-left: 1px solid rgba(255,255,255,0.08); padding-left: 12px;">
+                <div style="font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase;">Target Submission</div>
+                <div style="font-size: 0.95rem; font-weight: 800; color: var(--amber); margin: 2px 0;">28-Oct-2026</div>
+                <div style="font-size: 0.7rem; color: var(--emerald);"><i class="fa-solid fa-check"></i> Fabric Released</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Existing Requests Table -->
+          <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; overflow-x: auto;">
+            <div style="padding: 10px 14px; background: rgba(15,23,42,0.8); border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.78rem; font-weight: 700; color: #fff;">
+                <i class="fa-solid fa-list" style="color: var(--cyan); margin-right: 6px;"></i> Active Requisitions Waiting for Stage Advancement
+              </span>
+              <span style="font-size: 0.72rem; color: var(--text-muted);">Displaying 4 Most Recent Styles</span>
+            </div>
+            <table style="width: 100%; font-size: 0.76rem; border-collapse: collapse; text-align: left;">
+              <thead>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.1); color: var(--text-muted);">
+                  <th style="padding: 8px 10px;">Request No</th>
+                  <th style="padding: 8px 10px;">Buyer</th>
+                  <th style="padding: 8px 10px;">Style</th>
+                  <th style="padding: 8px 10px;">Sample Type</th>
+                  <th style="padding: 8px 10px; text-align: center;">Pcs</th>
+                  <th style="padding: 8px 10px;">Target Date</th>
+                  <th style="padding: 8px 10px; text-align: center;">Current Stage</th>
+                  <th style="padding: 8px 10px; text-align: center;">Next-Step Status</th>
+                </tr>
+              </thead>
+              <tbody style="color: var(--text-secondary);">
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 10px; font-family: var(--font-mono); color: #f43f5e; font-weight: 700;">SR-2026-0184</td>
+                  <td style="padding: 8px 10px; font-weight: 600; color: #fff;">Tommy Hilfiger</td>
+                  <td style="padding: 8px 10px; color: #fff;">TH-88412 Crew Neck</td>
+                  <td style="padding: 8px 10px;"><span class="arch-tech-pill">Proto Sample</span></td>
+                  <td style="padding: 8px 10px; text-align: center; font-weight: 700; color: #fff;">2</td>
+                  <td style="padding: 8px 10px; color: var(--amber); font-weight: 600;">28-Oct-2026</td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="background: rgba(56,189,248,0.15); color: var(--cyan); padding: 2px 6px; border-radius: 4px; font-weight: 700;">Cutting Done</span></td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="color: var(--emerald); font-weight: 700;"><i class="fa-solid fa-lock-open"></i> Sewing Unlocked</span></td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 10px; font-family: var(--font-mono); color: #f43f5e; font-weight: 700;">SR-2026-0185</td>
+                  <td style="padding: 8px 10px; font-weight: 600; color: #fff;">Zara</td>
+                  <td style="padding: 8px 10px; color: #fff;">ZR-Fleece Hoodie</td>
+                  <td style="padding: 8px 10px;"><span class="arch-tech-pill">Fit Sample</span></td>
+                  <td style="padding: 8px 10px; text-align: center; font-weight: 700; color: #fff;">3</td>
+                  <td style="padding: 8px 10px; color: var(--amber); font-weight: 600;">30-Oct-2026</td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="background: rgba(245,158,11,0.15); color: var(--amber); padding: 2px 6px; border-radius: 4px; font-weight: 700;">Fabric Waiting</span></td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="color: #f87171; font-weight: 700;"><i class="fa-solid fa-lock"></i> Cutting Locked</span></td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgba(255,255,255,0.04);">
+                  <td style="padding: 8px 10px; font-family: var(--font-mono); color: #f43f5e; font-weight: 700;">SR-2026-0182</td>
+                  <td style="padding: 8px 10px; font-weight: 600; color: #fff;">H&M</td>
+                  <td style="padding: 8px 10px; color: #fff;">HM-Cargo Jogger</td>
+                  <td style="padding: 8px 10px;"><span class="arch-tech-pill">Pre-Production</span></td>
+                  <td style="padding: 8px 10px; text-align: center; font-weight: 700; color: #fff;">4</td>
+                  <td style="padding: 8px 10px; color: var(--cyan); font-weight: 600;">02-Nov-2026</td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="background: rgba(168,85,247,0.15); color: #c084fc; padding: 2px 6px; border-radius: 4px; font-weight: 700;">CFT Pending</span></td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="color: #f87171; font-weight: 700;"><i class="fa-solid fa-lock"></i> Dispatch Locked</span></td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 10px; font-family: var(--font-mono); color: #f43f5e; font-weight: 700;">SR-2026-0179</td>
+                  <td style="padding: 8px 10px; font-weight: 600; color: #fff;">Calvin Klein</td>
+                  <td style="padding: 8px 10px; color: #fff;">CK-Denim Overshirt</td>
+                  <td style="padding: 8px 10px;"><span class="arch-tech-pill">Salesman Sample</span></td>
+                  <td style="padding: 8px 10px; text-align: center; font-weight: 700; color: #fff;">6</td>
+                  <td style="padding: 8px 10px; color: var(--emerald); font-weight: 600;">26-Oct-2026</td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="background: rgba(16,185,129,0.15); color: var(--emerald); padding: 2px 6px; border-radius: 4px; font-weight: 700;">Rack Allocated</span></td>
+                  <td style="padding: 8px 10px; text-align: center;"><span style="color: var(--emerald); font-weight: 700;"><i class="fa-solid fa-check"></i> Ready to Courier</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Production Stage & Next-Step Lock -->
+        <div id="tab-sms-prod" class="app-tab-panel" style="padding: 16px;">
+          <!-- Workflow Chain Visualizer -->
+          <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(56,189,248,0.25); border-radius: 8px; padding: 14px; margin-bottom: 14px;">
+            <div style="font-size: 0.8rem; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+              <span><i class="fa-solid fa-network-wired" style="color: var(--cyan); margin-right: 6px;"></i> Active Sequential Production Milestone Chain: <strong>Piece REQ-TH-F25-0012-P01</strong></span>
+              <span style="font-size: 0.72rem; color: var(--emerald);"><i class="fa-solid fa-shield-check"></i> Hard Sequential Rules Enforced</span>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px;">
+              <!-- Step 1: Fabric -->
+              <div style="background: rgba(16,185,129,0.1); border: 1px solid #10b981; border-radius: 6px; padding: 10px; text-align: center;">
+                <div style="font-size: 0.65rem; color: var(--emerald); font-weight: 700; margin-bottom: 2px;">MILESTONE 01</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.78rem;">Fabric Issued</div>
+                <div style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px;">Lot TAKKA-8841-A</div>
+                <div style="color: var(--emerald); font-size: 0.7rem; margin-top: 4px;"><i class="fa-solid fa-circle-check"></i> Complete</div>
+              </div>
+
+              <!-- Step 2: CAD / Pattern -->
+              <div style="background: rgba(16,185,129,0.1); border: 1px solid #10b981; border-radius: 6px; padding: 10px; text-align: center;">
+                <div style="font-size: 0.65rem; color: var(--emerald); font-weight: 700; margin-bottom: 2px;">MILESTONE 02</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.78rem;">Pattern Ready</div>
+                <div style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px;">Gerber CAD Graded</div>
+                <div style="color: var(--emerald); font-size: 0.7rem; margin-top: 4px;"><i class="fa-solid fa-circle-check"></i> Complete</div>
+              </div>
+
+              <!-- Step 3: Cutting -->
+              <div style="background: rgba(16,185,129,0.1); border: 1px solid #10b981; border-radius: 6px; padding: 10px; text-align: center;">
+                <div style="font-size: 0.65rem; color: var(--emerald); font-weight: 700; margin-bottom: 2px;">MILESTONE 03</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.78rem;">Cutting Done</div>
+                <div style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px;">Table CT-03</div>
+                <div style="color: var(--emerald); font-size: 0.7rem; margin-top: 4px;"><i class="fa-solid fa-circle-check"></i> Complete</div>
+              </div>
+
+              <!-- Step 4: Embellishment -->
+              <div style="background: rgba(56,189,248,0.1); border: 1px solid #38bdf8; border-radius: 6px; padding: 10px; text-align: center;">
+                <div style="font-size: 0.65rem; color: var(--cyan); font-weight: 700; margin-bottom: 2px;">MILESTONE 04</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.78rem;">Embroidery</div>
+                <div style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px;">Barudan MC-02</div>
+                <div style="color: var(--cyan); font-size: 0.7rem; margin-top: 4px;"><i class="fa-solid fa-spinner fa-spin"></i> In Progress</div>
+              </div>
+
+              <!-- Step 5: Sewing (Locked) -->
+              <div style="background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.15); border-radius: 6px; padding: 10px; text-align: center; opacity: 0.6;">
+                <div style="font-size: 0.65rem; color: var(--text-muted); font-weight: 700; margin-bottom: 2px;">MILESTONE 05</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.78rem;">Sewing Assembly</div>
+                <div style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px;">Waiting Embellishment</div>
+                <div style="color: #f87171; font-size: 0.7rem; margin-top: 4px;"><i class="fa-solid fa-lock"></i> Locked</div>
+              </div>
+
+              <!-- Step 6: CFT Quality (Locked) -->
+              <div style="background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.15); border-radius: 6px; padding: 10px; text-align: center; opacity: 0.6;">
+                <div style="font-size: 0.65rem; color: var(--text-muted); font-weight: 700; margin-bottom: 2px;">MILESTONE 06</div>
+                <div style="color: #fff; font-weight: 700; font-size: 0.78rem;">CFT Sign-Off</div>
+                <div style="font-size: 0.65rem; color: var(--text-muted); margin-top: 4px;">Final Audit</div>
+                <div style="color: #f87171; font-size: 0.7rem; margin-top: 4px;"><i class="fa-solid fa-lock"></i> Locked</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Production Timestamp Audit Box -->
+          <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 14px;">
+            <div style="font-size: 0.8rem; font-weight: 700; color: #fff; margin-bottom: 8px;">
+              <i class="fa-solid fa-fingerprint" style="color: var(--amber); margin-right: 6px;"></i> Workstation Timestamp Ledger & Operator IDs
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; font-size: 0.74rem;">
+              <div style="background: rgba(255,255,255,0.02); padding: 8px 10px; border-radius: 4px;">
+                <span style="color: var(--text-muted);">Pattern Sign-Off:</span> <strong style="color: #fff;">18-Oct-2026 09:14 AM</strong><br>
+                <span style="color: var(--text-muted);">Master:</span> CAD-Specialist #104 (P. Sharma)
+              </div>
+              <div style="background: rgba(255,255,255,0.02); padding: 8px 10px; border-radius: 4px;">
+                <span style="color: var(--text-muted);">Cutting Completion:</span> <strong style="color: #fff;">18-Oct-2026 11:30 AM</strong><br>
+                <span style="color: var(--text-muted);">Cutter:</span> Master Cutter #088 (M. Iqbal)
+              </div>
+              <div style="background: rgba(255,255,255,0.02); padding: 8px 10px; border-radius: 4px;">
+                <span style="color: var(--text-muted);">Embellishment Inward:</span> <strong style="color: var(--cyan);">18-Oct-2026 01:15 PM</strong><br>
+                <span style="color: var(--text-muted);">Technician:</span> Emb-Lead #034 (A. Zahir)
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Quality / CFT Review -->
+        <div id="tab-sms-cft" class="app-tab-panel" style="padding: 16px;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+            <!-- Left: CFT Audit Form -->
+            <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(56,189,248,0.25); border-radius: 8px; padding: 14px;">
+              <div style="font-size: 0.82rem; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-clipboard-check" style="color: var(--cyan);"></i>
+                <span>Cross-Functional Team Sign-Off Decision</span>
+              </div>
+              <div style="font-size: 0.74rem; color: var(--text-secondary); margin-bottom: 12px;">
+                Garment QR: <span style="font-family: var(--font-mono); color: var(--cyan); font-weight: 700;">REQ-TH-F25-0012-P01</span> • Style: <strong>TH-88412</strong>
+              </div>
+
+              <!-- Decision Buttons -->
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 14px;">
+                <button style="padding: 10px 4px; background: rgba(16,185,129,0.2); border: 2px solid #10b981; color: var(--emerald); font-weight: 700; font-size: 0.78rem; border-radius: 6px; cursor: pointer;">
+                  <i class="fa-solid fa-circle-check"></i> PASS / APPROVED
+                </button>
+                <button style="padding: 10px 4px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.3); color: var(--amber); font-weight: 600; font-size: 0.78rem; border-radius: 6px; cursor: pointer;">
+                  <i class="fa-solid fa-wrench"></i> REWORK
+                </button>
+                <button style="padding: 10px 4px; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); color: #f87171; font-weight: 600; font-size: 0.78rem; border-radius: 6px; cursor: pointer;">
+                  <i class="fa-solid fa-ban"></i> REJECT
+                </button>
+              </div>
+
+              <div style="margin-bottom: 10px;">
+                <label style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">CFT Multi-Department Signatures</label>
+                <div style="display: flex; gap: 8px; margin-top: 4px;">
+                  <span style="font-size: 0.68rem; background: rgba(16,185,129,0.15); color: var(--emerald); padding: 3px 8px; border-radius: 4px;"><i class="fa-solid fa-check"></i> Merchandising Sign-Off</span>
+                  <span style="font-size: 0.68rem; background: rgba(16,185,129,0.15); color: var(--emerald); padding: 3px 8px; border-radius: 4px;"><i class="fa-solid fa-check"></i> QA Manager Sign-Off</span>
+                  <span style="font-size: 0.68rem; background: rgba(16,185,129,0.15); color: var(--emerald); padding: 3px 8px; border-radius: 4px;"><i class="fa-solid fa-check"></i> Sample Master Sign-Off</span>
+                </div>
+              </div>
+
+              <div>
+                <label style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase;">Review Comments & Risk Assessment</label>
+                <p style="font-size: 0.72rem; color: #fff; background: rgba(255,255,255,0.03); padding: 8px 10px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.08); margin-top: 4px;">
+                  "Collar rib tension is optimal. Chest embroidery placement perfectly matches tech pack tolerance (±2mm). Sleeve hem flatlock tension validated. Garment approved for buyer courier dispatch."
+                </p>
+              </div>
+            </div>
+
+            <!-- Right: Photo Audit & Child QR Logic -->
+            <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 14px;">
+              <div style="font-size: 0.82rem; font-weight: 700; color: #fff; margin-bottom: 10px; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-camera" style="color: var(--amber);"></i>
+                <span>Photographic Defect Documentation & Rework Loop</span>
+              </div>
+
+              <div style="background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.15); border-radius: 6px; padding: 12px; text-align: center; margin-bottom: 12px;">
+                <div style="font-size: 1.8rem; color: var(--cyan); margin-bottom: 4px;"><i class="fa-solid fa-image"></i></div>
+                <div style="font-size: 0.75rem; color: #fff; font-weight: 600;">Uploaded Garment Inspection Capture</div>
+                <div style="font-size: 0.68rem; color: var(--text-muted); margin-top: 2px;">Stored in <code style="color:var(--cyan);">/uploads/cft/2026_TH_88412_P01_APPROVED.jpg</code></div>
+              </div>
+
+              <div style="background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); border-radius: 6px; padding: 10px; font-size: 0.72rem; line-height: 1.5;">
+                <div style="font-weight: 700; color: var(--amber); margin-bottom: 4px;"><i class="fa-solid fa-code-branch"></i> Automated Child Rework QR Tagging</div>
+                <p style="margin: 0; color: var(--text-secondary);">
+                  If a sample is marked for rework, the system immediately generates a sequential child QR (<code style="color:#fff;">REQ-TH-F25-0012-P01-R1</code>). This prevents duplicate counts, links back to the parent defect record, and resets production locks for the specific altered component.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Rack Binning & QR Locator -->
+        <div id="tab-sms-rack" class="app-tab-panel" style="padding: 16px;">
+          <!-- Warehouse Rack Grid -->
+          <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(56,189,248,0.25); border-radius: 8px; padding: 14px; margin-bottom: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: #fff;">
+                <i class="fa-solid fa-warehouse" style="color: var(--cyan); margin-right: 6px;"></i> Physical Sample Room Warehouse Digital Twin (36 Storage Bins)
+              </span>
+              <span style="font-size: 0.72rem; color: var(--emerald);"><i class="fa-solid fa-check"></i> Camera QR Scanner Ready</span>
+            </div>
+
+            <!-- Sections A, B, C Display -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
+              <!-- Section A -->
+              <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 10px;">
+                <div style="font-weight: 700; font-size: 0.78rem; color: #fff; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 4px;">
+                  SECTION A (Proto & Fit Samples)
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 0.68rem; text-align: center;">
+                  <div style="background: rgba(16,185,129,0.2); border: 1px solid #10b981; border-radius: 4px; padding: 6px 2px; color: var(--emerald); font-weight: 700;">A-1-A<br><span style="font-size: 0.6rem; color: #fff;">18 Pcs</span></div>
+                  <div style="background: rgba(16,185,129,0.2); border: 1px solid #10b981; border-radius: 4px; padding: 6px 2px; color: var(--emerald); font-weight: 700;">A-1-B<br><span style="font-size: 0.6rem; color: #fff;">24 Pcs</span></div>
+                  <div style="background: rgba(56,189,248,0.15); border: 1px solid #38bdf8; border-radius: 4px; padding: 6px 2px; color: var(--cyan); font-weight: 700;">A-1-C<br><span style="font-size: 0.6rem; color: #fff;">Active</span></div>
+                  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 6px 2px; color: var(--text-muted);">A-1-D<br>Empty</div>
+                </div>
+              </div>
+
+              <!-- Section B -->
+              <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 10px;">
+                <div style="font-weight: 700; font-size: 0.78rem; color: #fff; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 4px;">
+                  SECTION B (Salesman & Size Sets)
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 0.68rem; text-align: center;">
+                  <div style="background: rgba(16,185,129,0.2); border: 1px solid #10b981; border-radius: 4px; padding: 6px 2px; color: var(--emerald); font-weight: 700;">B-1-A<br><span style="font-size: 0.6rem; color: #fff;">32 Pcs</span></div>
+                  <div style="background: rgba(16,185,129,0.2); border: 1px solid #10b981; border-radius: 4px; padding: 6px 2px; color: var(--emerald); font-weight: 700;">B-1-B<br><span style="font-size: 0.6rem; color: #fff;">15 Pcs</span></div>
+                  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 6px 2px; color: var(--text-muted);">B-1-C<br>Empty</div>
+                  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 6px 2px; color: var(--text-muted);">B-1-D<br>Empty</div>
+                </div>
+              </div>
+
+              <!-- Section C -->
+              <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 6px; padding: 10px;">
+                <div style="font-weight: 700; font-size: 0.78rem; color: #fff; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 4px;">
+                  SECTION C (PP & Reference Gold Seals)
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; font-size: 0.68rem; text-align: center;">
+                  <div style="background: rgba(168,85,247,0.2); border: 1px solid #a855f7; border-radius: 4px; padding: 6px 2px; color: #c084fc; font-weight: 700;">C-1-A<br><span style="font-size: 0.6rem; color: #fff;">Gold Seal</span></div>
+                  <div style="background: rgba(168,85,247,0.2); border: 1px solid #a855f7; border-radius: 4px; padding: 6px 2px; color: #c084fc; font-weight: 700;">C-1-B<br><span style="font-size: 0.6rem; color: #fff;">Gold Seal</span></div>
+                  <div style="background: rgba(16,185,129,0.2); border: 1px solid #10b981; border-radius: 4px; padding: 6px 2px; color: var(--emerald); font-weight: 700;">C-1-C<br><span style="font-size: 0.6rem; color: #fff;">12 Pcs</span></div>
+                  <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 6px 2px; color: var(--text-muted);">C-1-D<br>Empty</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Scan Action Simulation Box -->
+          <div style="background: rgba(2,6,23,0.7); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-size: 0.76rem; color: var(--text-secondary);">
+              <i class="fa-solid fa-mobile-screen" style="color: var(--cyan); margin-right: 6px;"></i>
+              Last Mobile Scan: <strong style="color: #fff;">REQ-TH-F25-0012-P01</strong> checked into <strong style="color: var(--cyan);">Rack A-1-C</strong> by Storekeeper S. Akram.
+            </div>
+            <span style="font-size: 0.72rem; color: var(--emerald); font-weight: 700;">
+              <i class="fa-solid fa-circle-check"></i> Instant Retrieval Verified
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Business Impact / ROI -->
+    <section id="impact" class="product-section">
+      <span class="section-label-tag">OPERATIONAL EXCELLENCE & ROI</span>
+      <h2 class="section-h2">Measurable Development & Sampling Impact</h2>
+
+      <div class="roi-metrics-grid">
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          <div class="roi-headline">On-Time Submissions</div>
+          <div class="roi-metric-name">Zero Missed Buyer Deadlines</div>
+          <p class="roi-detail">Sequential milestone tracking and automated stage delay alerts completely eliminated missed international buyer courier submission dates.</p>
+        </div>
+
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div class="roi-headline">Process Integrity</div>
+          <div class="roi-metric-name">Next-Step Locking Discipline</div>
+          <p class="roi-detail">Hard system locks prevented sewing uninspected fabric lots or cutting unapproved CAD patterns, slashing bulk production rework.</p>
+        </div>
+
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+          <div class="roi-headline">Zero-Loss Inventory</div>
+          <div class="roi-metric-name">Instant Rack QR Retrieval</div>
+          <p class="roi-detail">Camera-based rack binning by Section, Level, and Box reduced sample search times from hours to seconds, completely ending lost buyer garments.</p>
+        </div>
+
+        <div class="roi-card">
+          <div class="roi-badge-icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <div class="roi-headline">Less Paperwork</div>
+          <div class="roi-metric-name">Digital Traveler & Audit Trail</div>
+          <p class="roi-detail">Replaced physical registers, handwritten swatch cards, and disorganized WhatsApp chats with structured 4-in-1 printable cards and digital audit logs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Key Takeaway -->
+    <section id="takeaway" class="product-section">
+      <div class="recruiter-banner">
+        <div class="recruiter-icon-badge"><i class="fa-solid fa-user-check"></i></div>
+        <div class="recruiter-takeaway-content">
+          <h4>Key Takeaway: My Engineering & Digitalization Impact</h4>
+          <p>
+            I architected and engineered the Garment Sample Management System to bring rigorous industrial discipline to our high-pressure sampling and product development department. Previously, sample tracking was vulnerable to lost garments on crowded racks, cutting corners without fabric approvals, and chaotic verbal handoffs that put million-dollar buyer orders at risk.
+          </p>
+          <p style="margin-top: 8px;">
+            By integrating strict sequential next-step database locking, serialized piece QR traveler cards, offline camera-based rack location scanning, and a photographic Cross-Functional Team (CFT) review portal, I established total transparency from tech pack intake to international courier dispatch. Merchandisers, factory leadership, and buyer auditors now have instant, undeniable proof of garment quality, location, and approval history.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pager Navigation -->
+    <div class="app-pager-nav">
+      <a href="skill-matrix.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">← Previous Application</span>
+          <span class="app-name">Skill Matrix & Line Balancer</span>
+        </div>
+      </a>
+      <a href="cmms.html" class="pager-btn">
+        <div class="pager-meta">
+          <span class="subtext">Next Application →</span>
+          <span class="app-name">CMMS: Maintenance Management</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div><strong>Rajan Singh</strong> • Garment Sample Management System Product Showcase</div>
+      <div>Sidney Apparels LLC / Kingsville Garments</div>
+    </div>
+  </footer>
+
+  <script src="../js/product.js"></script>
+</body>
+</html>
